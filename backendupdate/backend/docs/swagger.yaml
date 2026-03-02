@@ -1,0 +1,141 @@
+openapi: 3.0.0
+info:
+  title: Dashboard Backend API
+  version: 1.0
+  description: API для управления дашбордом посещаемости студентов
+  contact:
+    name: API Support
+    email: support@dashboard.local
+  termsOfService: http://swagger.io/terms/
+
+servers:
+  - url: http://localhost:8080/api
+    description: Локальный сервер
+
+tags:
+  - name: admin
+    description: Административные операции
+  - name: system
+    description: Системные операции
+
+paths:
+  /admin/refresh-data:
+    post:
+      tags:
+        - admin
+      summary: Ручное обновление данных
+      description: Запускает конвертацию Excel файлов в JSON и загрузку в БД
+      responses:
+        '200':
+          description: Данные успешно обновлены
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: Данные успешно обновлены
+                  time:
+                    type: string
+                    format: date-time
+                    example: "2026-01-28T12:00:00Z"
+        '409':
+          description: Обновление уже выполняется
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Обновление уже выполняется
+        '500':
+          description: Ошибка обновления данных
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  details:
+                    type: string
+
+  /admin/refresh-status:
+    get:
+      tags:
+        - admin
+      summary: Статус обновления данных
+      description: Возвращает информацию о последнем обновлении данных
+      responses:
+        '200':
+          description: Статус обновления
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  in_progress:
+                    type: boolean
+                    example: false
+                  last_refresh:
+                    type: string
+                    format: date-time
+                    nullable: true
+                    example: "2026-01-28T12:00:00Z"
+                  last_refresh_ago:
+                    type: string
+                    nullable: true
+                    example: "1h30m0s"
+
+  /admin/refresh-history:
+    get:
+      tags:
+        - admin
+      summary: История обновлений
+      description: Возвращает историю обновлений данных
+      responses:
+        '200':
+          description: История обновлений
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  history:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        time:
+                          type: string
+                          format: date-time
+                        status:
+                          type: string
+                        message:
+                          type: string
+
+  /health:
+    get:
+      tags:
+        - system
+      summary: Health Check
+      description: Проверяет работоспособность сервера
+      responses:
+        '200':
+          description: Сервер работает
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+                  service:
+                    type: string
+                    example: dashboard-backend
