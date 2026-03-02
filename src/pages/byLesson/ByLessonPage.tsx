@@ -22,13 +22,6 @@ const LESSON_LABELS: Record<number, string> = {
   6: "6-я пара",
 };
 
-function formatDateForInput(d: Date): string {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
-
 /** Контент с key — при смене date/lesson ремаунтится, useFetch получает свежие данные */
 function ByLessonContent({
   date,
