@@ -8,6 +8,7 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.2.1
 	github.com/lib/pq v1.11.1
 	github.com/robfig/cron/v3 v3.0.1
+	github.com/extrame/xls v0.4.3
 	github.com/xuri/excelize/v2 v2.8.1
 )
 
