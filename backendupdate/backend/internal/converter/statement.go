@@ -386,7 +386,7 @@ func ConvertStatement(inputFileXLS, outputFile, pythonScriptPath string) error {
 	return nil
 }
 
-// convertXLSToXLSX конвертирует XLS файл в XLSX формат через Python скрипт
+// convertXLSToXLSX конвертирует XLS файл в XLSX формат через Python скрипт (внутренняя реализация).
 func convertXLSToXLSX(xlsFile, xlsxFile, pythonScriptPath string) error {
 	// Проверяем, существует ли уже XLSX файл и он новее XLS
 	if info, err := os.Stat(xlsxFile); err == nil {
@@ -400,6 +400,12 @@ func convertXLSToXLSX(xlsFile, xlsxFile, pythonScriptPath string) error {
 
 	// Используем Python скрипт для конвертации
 	return convertXLSToXLSXPython(xlsFile, xlsxFile, pythonScriptPath)
+}
+
+// ConvertXLSToXLSX — экспортируемая обёртка над convertXLSToXLSX для использования из других пакетов.
+// Нужна, чтобы, например, fetcher мог конвертировать .xls расписания ОКЭИ перед парсингом.
+func ConvertXLSToXLSX(xlsFile, xlsxFile, pythonScriptPath string) error {
+	return convertXLSToXLSX(xlsFile, xlsxFile, pythonScriptPath)
 }
 
 // convertXLSToXLSXPython использует Python скрипт для конвертации
