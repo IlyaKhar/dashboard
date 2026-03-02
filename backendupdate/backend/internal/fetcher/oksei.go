@@ -54,7 +54,8 @@ func FetchSchedule(fileURL string, outputPath string) error {
 
 // FetchScheduleFromOkseiPage загружает страницу расписания ОКЭИ, находит ссылки на .xls,
 // скачивает файлы, парсит timetable (группа → день → пара → дисциплина) и сохраняет в outputPath.
-func FetchScheduleFromOkseiPage(pageURL, outputPath string, _ string) error {
+// Для .xls использует Python-скрипт из pythonScriptPath для конвертации в .xlsx.
+func FetchScheduleFromOkseiPage(pageURL, outputPath string, pythonScriptPath string) error {
 	if pageURL == "" {
 		pageURL = okseiPageURL
 	}
@@ -89,8 +90,19 @@ func FetchScheduleFromOkseiPage(pageURL, outputPath string, _ string) error {
 			log.Printf("[Fetcher] Пропуск файла %s: %v", link, err)
 			continue
 		}
-		out, err := converter.ParseOkseiTimetable(xlsPath)
+
+		// Конвертируем .xls → .xlsx, затем парсим через excelize внутри ParseOkseiTimetable.
+		xlsxPath := strings.TrimSuffix(xlsPath, ".xls") + ".xlsx"
+		if err := converter.ConvertXLSToXLSX(xlsPath, xlsxPath, pythonScriptPath); err != nil {
+			log.Printf("[Fetcher] Ошибка конвертации %s: %v", link, err)
+			_ = os.Remove(xlsPath)
+			_ = os.Remove(xlsxPath)
+			continue
+		}
 		_ = os.Remove(xlsPath)
+
+		out, err := converter.ParseOkseiTimetable(xlsxPath)
+		_ = os.Remove(xlsxPath)
 		if err != nil {
 			log.Printf("[Fetcher] Парсинг %s: %v", link, err)
 			continue

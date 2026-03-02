@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/extrame/xls"
+	"github.com/xuri/excelize/v2"
 )
 
 // OkseiTimetableItem — одна пара в расписании (группа, день, номер пары, дисциплина, преподаватель)
@@ -50,28 +50,38 @@ var (
 	rovRe    = regexp.MustCompile(`(?i)^\s*РОВ\s+(.+)$`)
 )
 
-// ParseOkseiTimetable парсит .xls расписание ОКЭИ и возвращает структуру
+// ParseOkseiTimetable парсит .xlsx расписание ОКЭИ и возвращает структуру.
+// Ожидается, что .xls уже конвертирован во .xlsx (через ConvertXLSToXLSX).
 func ParseOkseiTimetable(inputPath string) (*OkseiTimetableOutput, error) {
-	wb, err := xls.Open(inputPath, "utf-8")
+	f, err := excelize.OpenFile(inputPath)
 	if err != nil {
 		return nil, fmt.Errorf("открытие файла: %w", err)
 	}
+	defer func() {
+		_ = f.Close()
+	}()
 
-	sheet := wb.GetSheet(0)
-	if sheet == nil {
+	sheetName := f.GetSheetName(0)
+	if sheetName == "" {
 		return nil, fmt.Errorf("лист не найден")
 	}
 
-	maxRow := int(sheet.MaxRow)
-	if maxRow < 1 {
+	rows, err := f.GetRows(sheetName)
+	if err != nil {
+		return nil, fmt.Errorf("чтение строк: %w", err)
+	}
+	if len(rows) == 0 {
 		return nil, fmt.Errorf("файл пуст")
 	}
 
 	// Строка 0: заголовки — группы в колонках 2+
-	header := sheet.Row(0)
+	header := rows[0]
 	var groups []string
 	for ci := 2; ci < 200; ci++ {
-		g := strings.TrimSpace(header.Col(ci))
+		if ci >= len(header) {
+			break
+		}
+		g := strings.TrimSpace(header[ci])
 		if g == "" || g == "День недели" || g == "Номер пары" {
 			continue
 		}
@@ -99,10 +109,16 @@ func ParseOkseiTimetable(inputPath string) (*OkseiTimetableOutput, error) {
 	var currentDay int
 	var currentPair int
 
-	for ri := 1; ri <= maxRow; ri++ {
-		row := sheet.Row(ri)
-		col0 := strings.TrimSpace(row.Col(0))
-		col1 := strings.TrimSpace(row.Col(1))
+	for ri := 1; ri < len(rows); ri++ {
+		row := rows[ri]
+		col0 := ""
+		col1 := ""
+		if len(row) > 0 {
+			col0 = strings.TrimSpace(row[0])
+		}
+		if len(row) > 1 {
+			col1 = strings.TrimSpace(row[1])
+		}
 
 		// Обновляем день недели
 		if m := dayRe.FindString(col0); m != "" {
@@ -148,8 +164,10 @@ func ParseOkseiTimetable(inputPath string) (*OkseiTimetableOutput, error) {
 		// Читаем ячейки групп (колонки 2+)
 		for gi, groupName := range groups {
 			colIdx := 2 + gi
-			cell := row.Col(colIdx)
-			cell = strings.TrimSpace(cell)
+			var cell string
+			if colIdx < len(row) {
+				cell = strings.TrimSpace(row[colIdx])
+			}
 			if cell == "" {
 				continue
 			}

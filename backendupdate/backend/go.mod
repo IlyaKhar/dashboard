@@ -8,8 +8,8 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.2.1
 	github.com/lib/pq v1.11.1
 	github.com/robfig/cron/v3 v3.0.1
-	github.com/extrame/xls v0.4.3
 	github.com/xuri/excelize/v2 v2.8.1
+	golang.org/x/crypto v0.47.0
 )
 
 require (
@@ -39,7 +39,6 @@ require (
 	github.com/xuri/efp v0.0.0-20231025114914-d1ff6096ae53 // indirect
 	github.com/xuri/nfp v0.0.0-20230919160717-d98342af3f05 // indirect
 	golang.org/x/arch v0.8.0 // indirect
-	golang.org/x/crypto v0.47.0 // indirect
 	golang.org/x/net v0.49.0 // indirect
 	golang.org/x/sys v0.40.0 // indirect
 	golang.org/x/text v0.33.0 // indirect
