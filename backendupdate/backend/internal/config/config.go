@@ -15,14 +15,14 @@ type Config struct {
 	RefreshInterval time.Duration
 
 	// Пути к файлам
-	ProjectRoot      string
-	AttendanceInput  string
-	AttendanceOutput string
-	StatementInput   string
-	StatementOutput  string // public/vedomost.json
+	ProjectRoot        string
+	AttendanceInput    string
+	AttendanceOutput   string
+	StatementInput     string
+	StatementOutput    string // public/vedomost.json
 	StudentsInput      string // Ведомостьколва.xlsx или Контингент студентов
 	StudentsOutput     string // public/students.json
-	LessonsInput       string // Проба.xlsx - расписание занятий (старый формат)
+	LessonsInput       string // (не используется, расписание теперь строится из сетки/ОКЭИ)
 	LessonsOutput      string // public/schedule.json
 	ScheduleGridInput  string // расписание.xls - сетка расписания (новый формат)
 	ScheduleGridOutput string // public/schedule_grid.json
@@ -242,7 +242,7 @@ func Load() (*Config, error) {
 	// Пути к файлам — можно переопределить через env
 	// Ищем файлы в нескольких местах: корень проекта, converter/, backend/internal/converter/
 	converterDir := filepath.Join(projectRoot, "backend", "internal", "converter")
-	
+
 	// Функция для поиска файла в нескольких местах
 	findFile := func(filename string) string {
 		// Проверяем переменную окружения
@@ -261,24 +261,24 @@ func Load() (*Config, error) {
 		if envPath := os.Getenv("SCHEDULE_GRID_INPUT"); (filename == "расписание.xls" || filename == "Расписание.xls") && envPath != "" {
 			return envPath
 		}
-		
+
 		// Ищем в разных местах
 		locations := []string{
 			filepath.Join(projectRoot, filename),
 			filepath.Join(converterDir, filename),
 			filepath.Join(projectRoot, "converter", filename),
 		}
-		
+
 		for _, loc := range locations {
 			if _, err := os.Stat(loc); err == nil {
 				return loc
 			}
 		}
-		
+
 		// Возвращаем путь по умолчанию (корень проекта)
 		return filepath.Join(projectRoot, filename)
 	}
-	
+
 	attendanceInput := os.Getenv("ATTENDANCE_INPUT")
 	if attendanceInput == "" {
 		attendanceInput = findFile("Посещаемость.xlsx")
@@ -287,7 +287,7 @@ func Load() (*Config, error) {
 	if attendanceOutput == "" {
 		attendanceOutput = filepath.Join(projectRoot, "public", "attendance.json")
 	}
-	
+
 	statementInput := os.Getenv("STATEMENT_INPUT")
 	if statementInput == "" {
 		// Пробуем найти ведомость.xls или ведомость.xlsx
@@ -301,24 +301,27 @@ func Load() (*Config, error) {
 		// Ведомость по пропускам
 		statementOutput = filepath.Join(projectRoot, "public", "vedomost.json")
 	}
-	
+
 	studentsInput := os.Getenv("STUDENTS_INPUT")
 	if studentsInput == "" {
-		// Пробуем разные варианты названия
-		studentsInput = findFile("Ведомостьколва.xlsx")
+		// Приоритетно используем новый файл контингента "студенты.xlsx" (копируется с шары).
+		// Если его нет — откатываемся к старым вариантам (Ведомостьколва.xlsx и т.п.).
+		studentsInput = findFile("студенты.xlsx")
 		if _, err := os.Stat(studentsInput); err != nil {
-			studentsInput = findFile("ведомостьколва.xlsx")
+			studentsInput = findFile("Ведомостьколва.xlsx")
+			if _, err := os.Stat(studentsInput); err != nil {
+				studentsInput = findFile("ведомостьколва.xlsx")
+			}
 		}
 	}
 	studentsOutput := os.Getenv("STUDENTS_OUTPUT")
 	if studentsOutput == "" {
 		studentsOutput = filepath.Join(projectRoot, "public", "students.json")
 	}
-	
+
+	// Входной Excel для расписания напрямую больше не используем —
+	// schedule.json формируется из сетки расписания (расписание.xls) и данных студентов.
 	lessonsInput := os.Getenv("LESSONS_INPUT")
-	if lessonsInput == "" {
-		lessonsInput = findFile("Проба.xlsx")
-	}
 	lessonsOutput := os.Getenv("LESSONS_OUTPUT")
 	if lessonsOutput == "" {
 		// Нормализованное расписание
@@ -363,36 +366,36 @@ func Load() (*Config, error) {
 	}
 
 	cfg := &Config{
-		RefreshInterval:    refreshInterval,
-		ProjectRoot:        projectRoot,
-		AttendanceInput:    attendanceInput,
-		AttendanceOutput:   attendanceOutput,
-		StatementInput:     statementInput,
-		StatementOutput:    statementOutput,
-		StudentsInput:      studentsInput,
-		StudentsOutput:     studentsOutput,
-		LessonsInput:       lessonsInput,
-		LessonsOutput:      lessonsOutput,
-		ScheduleGridInput:  scheduleGridInput,
-		ScheduleGridOutput: scheduleGridOutput,
-		PythonScript:       pythonScript,
-		OkseiScheduleURL:   okseiScheduleURL,
+		RefreshInterval:     refreshInterval,
+		ProjectRoot:         projectRoot,
+		AttendanceInput:     attendanceInput,
+		AttendanceOutput:    attendanceOutput,
+		StatementInput:      statementInput,
+		StatementOutput:     statementOutput,
+		StudentsInput:       studentsInput,
+		StudentsOutput:      studentsOutput,
+		LessonsInput:        lessonsInput,
+		LessonsOutput:       lessonsOutput,
+		ScheduleGridInput:   scheduleGridInput,
+		ScheduleGridOutput:  scheduleGridOutput,
+		PythonScript:        pythonScript,
+		OkseiScheduleURL:    okseiScheduleURL,
 		OkseiScheduleOutput: okseiScheduleOutput,
-		OneCSourceDir:      oneCSourceDir,
-		ServerPort:         serverPort,
-		ServerHost:         serverHost,
-		DatabaseURL:        databaseURL,
-		DatabaseHost:       os.Getenv("DB_HOST"),
-		DatabasePort:       os.Getenv("DB_PORT"),
-		DatabaseUser:       os.Getenv("DB_USER"),
-		DatabasePassword:   os.Getenv("DB_PASSWORD"),
-		DatabaseName:       os.Getenv("DB_NAME"),
-		JWTSecret:          jwtSecret,
-		CORSOrigins:        corsOrigins,
-		AbsenceThreshold:   threshold,
-		LoginUser:          loginUser,
-		LoginPassword:      loginPassword,
-		LoginRole:          loginRole,
+		OneCSourceDir:       oneCSourceDir,
+		ServerPort:          serverPort,
+		ServerHost:          serverHost,
+		DatabaseURL:         databaseURL,
+		DatabaseHost:        os.Getenv("DB_HOST"),
+		DatabasePort:        os.Getenv("DB_PORT"),
+		DatabaseUser:        os.Getenv("DB_USER"),
+		DatabasePassword:    os.Getenv("DB_PASSWORD"),
+		DatabaseName:        os.Getenv("DB_NAME"),
+		JWTSecret:           jwtSecret,
+		CORSOrigins:         corsOrigins,
+		AbsenceThreshold:    threshold,
+		LoginUser:           loginUser,
+		LoginPassword:       loginPassword,
+		LoginRole:           loginRole,
 	}
 
 	return cfg, nil

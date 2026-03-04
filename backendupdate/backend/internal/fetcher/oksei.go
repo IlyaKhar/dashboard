@@ -55,7 +55,9 @@ func FetchSchedule(fileURL string, outputPath string) error {
 // FetchScheduleFromOkseiPage загружает страницу расписания ОКЭИ, находит ссылки на .xls,
 // скачивает файлы, парсит timetable (группа → день → пара → дисциплина) и сохраняет в outputPath.
 // Для .xls использует Python-скрипт из pythonScriptPath для конвертации в .xlsx.
-func FetchScheduleFromOkseiPage(pageURL, outputPath string, pythonScriptPath string) error {
+// Если converterDir не пустой, первый найденный .xls дополнительно сохраняется в эту директорию
+// под именем "расписание.xls" для дальнейшей обработки конвертерами (сетка расписания).
+func FetchScheduleFromOkseiPage(pageURL, outputPath, pythonScriptPath, converterDir string) error {
 	if pageURL == "" {
 		pageURL = okseiPageURL
 	}
@@ -89,6 +91,21 @@ func FetchScheduleFromOkseiPage(pageURL, outputPath string, pythonScriptPath str
 		if err := downloadFile(client, link, xlsPath); err != nil {
 			log.Printf("[Fetcher] Пропуск файла %s: %v", link, err)
 			continue
+		}
+
+		// Дополнительно сохраняем первый файл расписания в директорию конвертера,
+		// чтобы его могли обработать ConvertScheduleGrid/ConvertScheduleGridToLessonsFormat.
+		if converterDir != "" && i == 0 {
+			if err := os.MkdirAll(converterDir, 0o755); err != nil {
+				log.Printf("[Fetcher] Не удалось создать директорию конвертера для расписания: %v", err)
+			} else {
+				fixedPath := filepath.Join(converterDir, "расписание.xls")
+				if err := copyFileLocal(xlsPath, fixedPath); err != nil {
+					log.Printf("[Fetcher] Не удалось сохранить файл расписания в конвертер: %v", err)
+				} else {
+					log.Printf("[Fetcher] Файл расписания сохранён в конвертер: %s", fixedPath)
+				}
+			}
 		}
 
 		// Конвертируем .xls → .xlsx, затем парсим через excelize внутри ParseOkseiTimetable.
@@ -201,6 +218,30 @@ func downloadFile(client *http.Client, fileURL, destPath string) error {
 		_ = os.Remove(destPath)
 		return err
 	}
+	return nil
+}
+
+// copyFileLocal копирует файл src → dst (простая обёртка для локального копирования).
+func copyFileLocal(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer func() {
+		_ = out.Close()
+	}()
+
+	if _, err := io.Copy(out, in); err != nil {
+		_ = os.Remove(dst)
+		return err
+	}
+
 	return nil
 }
 

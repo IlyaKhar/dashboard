@@ -39,12 +39,15 @@ func SyncFromOneC(sourceDir, converterDir string) {
 		}
 	}
 
+	// С шары забираем основные файлы:
+	// - ведомость.xls / ведомость.xlsx — мастер-файл для всех JSON (students/attendance/vedomost)
+	// - расписание.xls — сетка расписания, из которой собирается schedule_grid.json и schedule.json
 	files := []string{
-		"Посещаемость.xlsx",
 		"ведомость.xls",
 		"ведомость.xlsx",
-		"Ведомостьколва.xlsx",
-		"Проба.xlsx",
+		"расписание.xls",
+		"расписание.xlsx",
+		"студенты.xlsx",
 	}
 
 	log.Printf("[OneC] Синхронизация файлов из %s в %s...", sourceDir, converterDir)
@@ -92,4 +95,3 @@ func copyFile(src, dst string) error {
 
 	return nil
 }
-

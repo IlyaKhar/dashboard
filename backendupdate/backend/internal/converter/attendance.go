@@ -34,6 +34,42 @@ type Department struct {
 	Groups     []Group  `json:"groups"`
 }
 
+// readAttendanceRecords читает файл attendance*.json и разворачивает его
+// в плоский список записей посещаемости (department, group, student, date, missed).
+func readAttendanceRecords(path string) ([]attendanceRecordItem, error) {
+	data, err := os.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+
+	var departments []Department
+	if err := json.Unmarshal(data, &departments); err != nil {
+		return nil, fmt.Errorf("ошибка парсинга JSON посещаемости: %w", err)
+	}
+
+	out := make([]attendanceRecordItem, 0, 1024)
+	for _, d := range departments {
+		for _, g := range d.Groups {
+			for _, s := range g.Students {
+				for _, rec := range s.Attendance {
+					if rec.Date == "" || rec.Missed <= 0 {
+						continue
+					}
+					out = append(out, attendanceRecordItem{
+						Department: d.Department,
+						Group:      g.Group,
+						Student:    s.Student,
+						Date:       rec.Date,
+						Missed:     rec.Missed,
+					})
+				}
+			}
+		}
+	}
+
+	return out, nil
+}
+
 // ConvertAttendance конвертирует файл посещаемости Excel в JSON
 // inputFile - путь к файлу Посещаемость.xlsx
 // outputFile - путь к выходному JSON файлу
@@ -215,14 +251,83 @@ func ConvertAttendance(inputFile, outputFile string) error {
 	return nil
 }
 
+// UpdateAttendanceHistory обновляет накопительный файл истории посещаемости.
+// newFile     — свежий attendance.json за один день;
+// historyFile — накопительный attendance_history.json (создаётся, если не существует).
+func UpdateAttendanceHistory(newFile, historyFile string) error {
+	// Читаем новую порцию данных
+	newRecords, err := readAttendanceRecords(newFile)
+	if err != nil {
+		return fmt.Errorf("не удалось прочитать новый attendance.json: %w", err)
+	}
+	if len(newRecords) == 0 {
+		// Нечего добавлять
+		return nil
+	}
+
+	// Читаем старую историю, если есть
+	historyRecords := []attendanceRecordItem{}
+	if _, err := os.Stat(historyFile); err == nil {
+		if recs, err := readAttendanceRecords(historyFile); err == nil {
+			historyRecords = recs
+		}
+	}
+
+	// Собираем map по ключу dept|group|student|date → missed.
+	type key struct {
+		dept, group, student, date string
+	}
+	m := make(map[key]int)
+
+	for _, r := range historyRecords {
+		if r.Missed <= 0 || r.Date == "" {
+			continue
+		}
+		k := key{dept: r.Department, group: r.Group, student: r.Student, date: r.Date}
+		// В истории уже агрегировано, просто переносим значение.
+		m[k] = r.Missed
+	}
+
+	// Новые данные имеют приоритет: обновляем/добавляем записи за тот же день.
+	for _, r := range newRecords {
+		if r.Missed <= 0 || r.Date == "" {
+			continue
+		}
+		k := key{dept: r.Department, group: r.Group, student: r.Student, date: r.Date}
+		m[k] = r.Missed
+	}
+
+	// Превращаем map обратно в слайс записей и пересобираем JSON через существующую writeAttendanceJSON.
+	merged := make([]attendanceRecordItem, 0, len(m))
+	for k, missed := range m {
+		merged = append(merged, attendanceRecordItem{
+			Department: k.dept,
+			Group:      k.group,
+			Student:    k.student,
+			Date:       k.date,
+			Missed:     missed,
+		})
+	}
+
+	if err := writeAttendanceJSON(merged, historyFile); err != nil {
+		return fmt.Errorf("ошибка записи истории посещаемости: %w", err)
+	}
+
+	return nil
+}
+
 func parseDateValue(value string) string {
 	value = strings.TrimSpace(value)
 	if value == "" {
 		return ""
 	}
 
+	// Если пришло число — это может быть сериал Excel, но
+	// пропущенные часы (2, 4, 6, 8 ...) нам тоже приходят как числа.
+	// Для безопасности считаем датой только большие значения (≈ после 1960‑х),
+	// чтобы не путать часы с датой.
 	if num, err := strconv.ParseFloat(value, 64); err == nil {
-		if num >= 1 && num < 100000 {
+		if num >= 30000 && num < 100000 {
 			excelEpoch := time.Date(1899, 12, 30, 0, 0, 0, 0, time.UTC)
 			days := int(num)
 			date := excelEpoch.AddDate(0, 0, days)
@@ -254,4 +359,31 @@ func parseDateValue(value string) string {
 		}
 	}
 	return ""
+}
+
+// parseAttendanceRow пытается найти дату и пропущенные часы в строке.
+// Дату берём только из "датоподобных" ячеек (первая колонка),
+// а если её там нет — используем defaultDate (например, из периода сводной ведомости).
+func parseAttendanceRow(row []string, defaultDate string) (date string, missed int) {
+	// 1. Пытаемся вытащить дату из первой ячейки
+	if len(row) > 0 {
+		if d := parseDateValue(row[0]); d != "" {
+			date = d
+		}
+	}
+
+	// 2. Ищем пропущенные часы (колонка F и правее — последние числовые значения)
+	for i := len(row) - 1; i >= 0 && i >= 5; i-- {
+		if num, err := strconv.ParseFloat(strings.TrimSpace(row[i]), 64); err == nil && num > 0 {
+			missed = int(num)
+			break
+		}
+	}
+
+	// 3. Если в строке даты нет, но есть defaultDate из периода — подставляем её
+	if date == "" {
+		date = defaultDate
+	}
+
+	return date, missed
 }

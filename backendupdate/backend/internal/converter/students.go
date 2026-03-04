@@ -40,13 +40,11 @@ type StudentsOutput struct {
 // inputFile - путь к файлу Ведомостьколва.xlsx (или другому файлу со списком студентов)
 // outputFile - путь к выходному JSON файлу
 func ConvertStudents(inputFile, outputFile string) error {
-	fmt.Printf("[DEBUG] Открытие файла: %s\n", inputFile)
 	f, err := excelize.OpenFile(inputFile)
 	if err != nil {
 		return fmt.Errorf("ошибка открытия файла: %v", err)
 	}
 	defer f.Close()
-	fmt.Printf("[DEBUG] Файл успешно открыт\n")
 
 	sheetName := f.GetSheetName(0)
 	if sheetName == "" {
@@ -57,7 +55,6 @@ func ConvertStudents(inputFile, outputFile string) error {
 	if err != nil {
 		return fmt.Errorf("ошибка чтения строк: %v", err)
 	}
-	fmt.Printf("[DEBUG] Прочитано строк: %d\n", len(rows))
 
 	departmentsMap := make(map[string]*DepartmentContingent)
 
@@ -251,7 +248,6 @@ func ConvertStudents(inputFile, outputFile string) error {
 						Group:    currentGroup,
 						Students: []StudentInfo{},
 					})
-					fmt.Printf("[DEBUG] Создана/обновлена группа: '%s'\n", currentGroup)
 				}
 			}
 		}
@@ -300,7 +296,6 @@ func ConvertStudents(inputFile, outputFile string) error {
 		if isGroup && group != "" {
 			// Сохраняем группу как есть (не в нижнем регистре!)
 			currentGroup = group
-			fmt.Printf("[DEBUG] Найдена группа: '%s' (отделение: '%s')\n", group, currentDepartment)
 
 			// Создаём группу, если её нет
 			if currentDepartment != "" {
@@ -317,7 +312,6 @@ func ConvertStudents(inputFile, outputFile string) error {
 						Group:    currentGroup,
 						Students: []StudentInfo{},
 					})
-					fmt.Printf("[DEBUG] Создана новая группа: '%s'\n", currentGroup)
 				}
 			}
 			continue

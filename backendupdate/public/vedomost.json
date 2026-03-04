@@ -1,239 +1,725 @@
 {
-  "period": "18.02.2026 - 18.02.2026",
+  "period": "04.03.2026 - 04.03.2026",
   "departments": [
     {
-      "department": "Отделение креативных индустрий",
-      "totalMissed": 150,
+      "department": "Отделение информационных технологий и беспилотников",
+      "totalMissed": 404,
       "specialties": [
         {
-          "specialty": "54.02.01 Дизайн (по отраслям)",
-          "totalMissed": 98,
+          "specialty": "",
+          "totalMissed": 404,
           "groups": [
             {
-              "group": "1д1",
-              "totalMissed": 24,
+              "group": "1ис3",
+              "totalMissed": 30,
               "students": [
                 {
-                  "student": "Русский язык",
-                  "missedTotal": 12,
-                  "missedBad": 0,
-                  "missedExcused": 12
+                  "student": "Мальков Андрей Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Асимова Дарина Руслановна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Мартынов Иван Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Булекешева Сабина Саматовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Основы проектирования баз данных",
+                  "missedTotal": 10,
+                  "missedBad": 10,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Вяльшина Юлия Маратовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Карасев Владислав Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Кайсарова Эвелина Марселевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Стручкова Ксения Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Полушкина Ангелина Александровна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Ростовский Ростислав Евгеньевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Ниясова Диана Викторовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "1д3",
+              "group": "3са1",
+              "totalMissed": 20,
+              "students": [
+                {
+                  "student": "Беляев Николай Александрович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Антоневич Иван Васильевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дымченко Антон Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Михеев Даниил Алексеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Галямов Ержан Нурланович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Чибряков Иван Викторович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Демчук Алексей Игоревич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ахматханов Альберт Данилович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3ис3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Добросельский Максим Андреевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Котов Гордей Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Баскаков Михаил Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2ис3",
+              "totalMissed": 32,
+              "students": [
+                {
+                  "student": "Симонова Ксения Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Денисов Артём Юрьевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бакаева Александра Сергеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Компьютерные сети",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Мухортов Вячеслав Алексеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бабин Егор Юрьевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Андреева Елизавета Максимовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1са3",
+              "totalMissed": 34,
+              "students": [
+                {
+                  "student": "Никулин Иван Олегович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Погребнов Егор Сергеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Медведев Кирилл Геннадьевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Чистоходов Артём Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иванов Дмитрий Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иностранный язык",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Агамалиев Рамил Шаведдинович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1ис2",
+              "totalMissed": 20,
+              "students": [
+                {
+                  "student": "Мулькаманов Артур Рустамович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шаяхметова Азалия Альбертовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Русский язык",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3ис1",
+              "totalMissed": 50,
+              "students": [
+                {
+                  "student": "Давлятов Ильдар Расулович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дикарев Андрей Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Киреев Александр Олегович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Карпов Алексей Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Мазина Алёна Денисовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Попова Анастасия Олеговна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лимонов Кирилл Александрович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Богданов Богдан Сергеевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иванов Александр Александрович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рауткин Дмитрий Олегович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Стрекалова Анастасия Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ряжнов Илья Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Соколов Данила Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1са2",
+              "totalMissed": 36,
+              "students": [
+                {
+                  "student": "Бердинских Александра Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Акашева Ольга Игоревна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иностранный язык",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Мукменкулов Амин Маратович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кубеков Артём Рифович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Жанузаков Тимур Кенжебекович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лямина Дарья Олеговна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Садомский Дмитрий Сергеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ячевская Виктория Алексеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лукина Дарья Вячеславовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Федорчук Богдан Юрьевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шнайдер Егор Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Купцов Тимофей Владимирович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2са3",
+              "totalMissed": 40,
+              "students": [
+                {
+                  "student": "Информационные технологии",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Элементы высшей математики",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Горюшкин Владислав Иванович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ежов Максим Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шмаков Егор Вячеславович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хусаенов Тимур Ринатович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сидорков Никита Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Воропаев Артём Сергеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1ис1",
               "totalMissed": 10,
               "students": [
                 {
-                  "student": "Бажитова Екатерина Дмитриевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Решилова Анастасия Павловна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Быстрова Дарья Игоревна",
+                  "student": "Основы проектирования баз данных",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Ланкова Дарья Викторовна",
+                  "student": "Гарафутдинова Полина Романовна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Надоненко Ксения Михайловна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Шокирова Зухро Абдурашидовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "3д3",
-              "totalMissed": 64,
+              "group": "1са1",
+              "totalMissed": 4,
               "students": [
                 {
-                  "student": "МДК 04.01 Основы менеджмента",
-                  "missedTotal": 32,
-                  "missedBad": 0,
-                  "missedExcused": 32
-                },
-                {
-                  "student": "Вескян Виолетта Станиславовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Димитрова Екатерина Андреевна",
-                  "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
-                },
-                {
-                  "student": "Казанцева Виктория Сергеевна",
-                  "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
-                },
-                {
-                  "student": "Капашев Артур Ерланович",
-                  "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
-                },
-                {
-                  "student": "Кипер Екатерина Александровна",
-                  "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
-                },
-                {
-                  "student": "Коробова Дарья Сергеевна",
-                  "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
+                  "student": "Дейнега Алёна Игоревна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
-            }
-          ]
-        },
-        {
-          "specialty": "42.02.01 Реклама",
-          "totalMissed": 52,
-          "groups": [
+            },
             {
-              "group": "1р1",
-              "totalMissed": 52,
+              "group": "3са3",
+              "totalMissed": 40,
               "students": [
                 {
-                  "student": "Иностранный язык",
-                  "missedTotal": 26,
-                  "missedBad": 0,
-                  "missedExcused": 26
+                  "student": "Бондаренко Данил Дмитриевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Автомонова Полина Сергеевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Тёмкин Никита Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Жидовленко Александра Николаевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Трусов Иван Денисович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Калиничева Виктория Вячеславовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Шалагин Илья Сергеевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Масагутова Диана Азатовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Прокопьев Кирилл Викторович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Морозова Екатерина Анатольевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Яруллин Матвей Андреевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Муртазина Элина Маратовна",
+                  "student": "Назмутдинов Рифат Артурович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2ис1",
+              "totalMissed": 2,
+              "students": [
+                {
+                  "student": "Кононенко Полина Константиновна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1бп1",
+              "totalMissed": 32,
+              "students": [
+                {
+                  "student": "Саджаия Марк Джумберович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Никулина Алёна Константиновна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Бижанов Артём Алексеевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Павлова Полина Олеговна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Исаналиев Ислам Азаматович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Познахарева Александра Сергеевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Филипчак Максим Максимович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Поросенкова Варвара Викторовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Лямкин Федор Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Рубинштейн Елизавета Станиславовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Сайфутдинов Даниэль Русланович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Самаркина Екатерина Петровна",
+                  "student": "Мельниченко Егор Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2бп3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Ходарев Максим Сергеевич",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Шумская Софья Александровна",
+                  "student": "Андреев Артём Викторович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ряховский Арсений Антонович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2са1",
+              "totalMissed": 26,
+              "students": [
+                {
+                  "student": "Акимов Роман Юрьевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Элементы высшей математики",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Раицкий Данил Евгеньевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Информационные технологии",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Байда Алексей Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Римская Яна Антоновна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4са1",
+              "totalMissed": 4,
+              "students": [
+                {
+                  "student": "Баширов Глеб Радикович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "УП.03 Учебная практика",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4са3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Проненко Антон Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "УП.03 Учебная практика",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
             }
@@ -242,346 +728,1126 @@
       ]
     },
     {
-      "department": "Отделение программирования",
-      "totalMissed": 146,
+      "department": "Отделение креативных индустрий",
+      "totalMissed": 842,
       "specialties": [
         {
-          "specialty": "09.02.07 Информационные системы и программирование",
-          "totalMissed": 146,
+          "specialty": "",
+          "totalMissed": 842,
           "groups": [
             {
-              "group": "1вб1",
-              "totalMissed": 18,
+              "group": "2д3",
+              "totalMissed": 44,
               "students": [
                 {
-                  "student": "Величко Владислав Сергеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Ермакова Ангелина Петровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Гирина Елизавета Олеговна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Сумина Виктория Николаевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Гурина Мария Юрьевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Джураева Карина Руслановна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Даутов Рифат Эльмирович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Мечес Софья Ильинична",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Домрачев Аркадий Алексеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Недоводеева Анастасия Николаевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Дорошенко Софья Альбертовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Перевязкина Алёна Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Кремнева Екатерина Алексеевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Пупышева Карина Евгеньевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Сагандыков Амирлан Бахтиярович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Рузаева Дарья Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Севостьянова Виолетта Васильевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Бубликова Юлия Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Верстов Никита Игоревич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Балыкина Ярослава Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "1вб3(б)",
+              "group": "2м1",
               "totalMissed": 28,
               "students": [
                 {
-                  "student": "Русский язык",
-                  "missedTotal": 14,
-                  "missedBad": 0,
-                  "missedExcused": 14
+                  "student": "Филимонов Кирилл Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Гребенников Даниил Денисович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Дергачев Никита Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Еремина Дарья Павловна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Воронцов Михаил Николаевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Маруфжонов Идибек Иномжонович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Козлов Артем Анатольевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Надыров Даниль Рустамович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Иванов Константин Денисович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Пестов Егор Иванович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Тарзименкова Наиля Тимуровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Рокол Анна Евгеньевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Тищенко Полина Александровна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Теплякова Елизавета Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "2вб2",
-              "totalMissed": 16,
+              "group": "3д3",
+              "totalMissed": 120,
               "students": [
                 {
-                  "student": "Информационные технологии",
-                  "missedTotal": 8,
-                  "missedBad": 0,
-                  "missedExcused": 8
+                  "student": "Капашев Артур Ерланович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Бурлуцкая Виолетта Ивановна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Юдина Анжелика Олеговна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Лян Константин Игоревич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Экономика организации",
+                  "missedTotal": 34,
+                  "missedBad": 34,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Стариченко Татьяна Николаевна",
+                  "student": "Коробова Дарья Сергеевна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Харченко Илья Алексеевич",
+                  "student": "Рудницкая Ульяна Максимовна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рассас Диана Шебилевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кипер Екатерина Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Понявина Ксения Игоревна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Корума Ксения Вячеславовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Семенова Анастасия Ивановна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сысоева Елизавета Витальевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Стрепетова Галина Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "МДК 04.01 Основы менеджмента",
+                  "missedTotal": 26,
+                  "missedBad": 26,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рыженкова Екатерина Романовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Целаева Маргарита Олеговна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Серенкова Алёна Артемовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Фунина Анжелика Максимовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "2вб3",
+              "group": "3р1",
+              "totalMissed": 56,
+              "students": [
+                {
+                  "student": "УП.04.01 Учебная практика",
+                  "missedTotal": 28,
+                  "missedBad": 28,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Биктимирова Лина Халимовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сусина Елизавета Витальевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рыбалкина Мария Викторовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Акимова Кира Владимировна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Скороварова Мария Антоновна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Плотникова Екатерина Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бурлуцкий Виктор Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2р3",
+              "totalMissed": 76,
+              "students": [
+                {
+                  "student": "Шеина Марта Николаевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Пучкова Дарина Денисовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ержанова Айнура Даулетовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ерышева Анастасия Николаевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лойко Маргарита Денисовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хачатрян Марина Артуровна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Барабошина Анастасия Дмитриевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Прокопец Мария Александровна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Софьина София Игоревна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Чернобай Ангелина Максимовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Соловьева Василиса Ивановна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 20,
+                  "missedBad": 20,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Абзалилова Ева Марсельевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ионова Анастасия Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рахимова Арина Валерьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4м1",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Джараев Алексей Русланович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Метрология, стандартизация, сертификация",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Горбунов Егор Михайлович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1д1",
+              "totalMissed": 72,
+              "students": [
+                {
+                  "student": "Лебедянцева Кира Евгеньевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Плаксина Виктория Ивановна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Асимова Дарина Руслановна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Куценко Семен Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Недыхалова Валерия Денисовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Макаревская Екатерина Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Новикова Виктория Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Русский язык",
+                  "missedTotal": 18,
+                  "missedBad": 18,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Основы проектной деятельности",
+                  "missedTotal": 18,
+                  "missedBad": 18,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Суфиева София Рафаэльевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ростовский Ростислав Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1р3",
+              "totalMissed": 46,
+              "students": [
+                {
+                  "student": "Геворгян Карине Симоновна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Французова Маргарита Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дьякова Алиса Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шевкунова Лилия Викторовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Русский язык",
+                  "missedTotal": 16,
+                  "missedBad": 16,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Карпейкина Дарья Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Халилова Милана Джамилевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Самойлова Вероника Дмитриевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Козлова Маргарита Валерьевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2р1",
+              "totalMissed": 54,
+              "students": [
+                {
+                  "student": "Андреева Дарья Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Акинина Ирина Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бородина Дарья Михайловна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шипова Александра Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 18,
+                  "missedBad": 18,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кочарян Элена Гариковна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Юрикова Екатерина Евгеньевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гирина Виолетта Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Муллахметова Юлия Денисовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Тукжанова Амира Айбулатовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2д1",
               "totalMissed": 12,
               "students": [
                 {
-                  "student": "Дискретная математика с элементами математической логики",
+                  "student": "Стоякина Алиса Георгиевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Безопасность жизнедеятельности",
                   "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Кончаков Данила Васильевич",
+                  "student": "Овсянникова Елизавета Васильевна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Скоян Софья Андраниковна",
+                  "student": "Мочалова Вероника Владимировна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Судоргин Никита Максимович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "2пк1",
-              "totalMissed": 16,
+              "group": "1р1",
+              "totalMissed": 20,
               "students": [
                 {
-                  "student": "МДК.01.03 Разработка мобильных приложений",
-                  "missedTotal": 8,
-                  "missedBad": 0,
-                  "missedExcused": 8
+                  "student": "Рубинштейн Елизавета Станиславовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Куприянова Виктория Владимировна",
+                  "student": "Никулина Алёна Константиновна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Мусин Сергей Дмитриевич",
+                  "student": "Калиничева Виктория Вячеславовна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Обухов Станислав Андреевич",
+                  "student": "Самаркина Екатерина Петровна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Сидалеев Роман Арыстанович",
+                  "student": "Гольцева Александра Александровна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шумская Софья Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Жантекеева Альмира Галимжановна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Познахарева Александра Сергеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Поросенкова Варвара Викторовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Масагутова Диана Азатовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "2пк2",
-              "totalMissed": 4,
+              "group": "3р3",
+              "totalMissed": 48,
               "students": [
                 {
-                  "student": "МДК.01.03 Разработка мобильных приложений",
+                  "student": "Крутова Елизавета Андреевна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Омельницкая Екатерина Ивановна",
+                  "student": "УП.04.01 Учебная практика",
+                  "missedTotal": 24,
+                  "missedBad": 24,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Данилова Арина Андреевна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Витухина Анастасия Дмитриевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Путаненко Виктория Антоновна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Молчанова Полина Олеговна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Губин Кирилл Вячеславович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Осыченко Илья Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сай Мария Евгеньевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Баусова Александра Антоновна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сакмаркин Михаил Александрович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Семенова Ангелина Сергеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Чернова Юлия Юрьевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "3вб1",
-              "totalMissed": 36,
+              "group": "1а1",
+              "totalMissed": 34,
               "students": [
                 {
-                  "student": "МДК 12.01 Управление информациоными ресурсами в цифровой экономике",
+                  "student": "Санникова Юлия Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Джамбулатова Алина Марсельевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Григорьева Кира Максимовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Воробьева Ангелина Владимировна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гайсина Юлия Вадимовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ковешникова Софья Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Информационные технологии",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3м1",
+              "totalMissed": 14,
+              "students": [
+                {
+                  "student": "Селиванова Кристина Дмитриевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Захаров Тимофей Александрович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Миргалиев Роман Радикович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Евтушенко Ксения Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3а1",
+              "totalMissed": 72,
+              "students": [
+                {
+                  "student": "Леньшина Алёна Витальевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Тугушева Линара Ринатовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Пешкова Ольга Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Волостнова Алёна Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Цымбал Яна Дмитриевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Пожидаева Мария Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Никонова Полина Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Комарова Виктория Максимовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сидорова Виолетта Олеговна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "МДК 06.01 Проектирование моушен-дизайна",
+                  "missedTotal": 36,
+                  "missedBad": 36,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1м1",
+              "totalMissed": 80,
+              "students": [
+                {
+                  "student": "Деньмухаметова Милена Мунировна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лапин Александр Александрович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Русский язык",
+                  "missedTotal": 14,
+                  "missedBad": 14,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Андреева Анна Станиславовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рахманкулова Камилла Наильевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Щедринов Максим Константинович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хуснутдинова Лилия Эльвировна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "История мировой культуры",
                   "missedTotal": 18,
-                  "missedBad": 0,
-                  "missedExcused": 18
+                  "missedBad": 18,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Абдыжапарова Мээрим Азимбековна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Бандура Александра Станиславовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Грехов Артём Алексеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Козырев Даниил Адрианович",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Гринин Кирилл Романович",
+                  "student": "Зацепилин Герман Владимирович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Камалутдинов Радмир Денисович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Климова Дарья Денисовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Новикова Алёна Дмитриевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Симонова Елизавета Александровна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Сисенова Лиана Маратовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Тауханова Дана Куанышевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Миросенко Дмитрий Павлович",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "3пк2",
-              "totalMissed": 16,
+              "group": "4д1",
+              "totalMissed": 32,
               "students": [
                 {
-                  "student": "МДК.01.02 Поддержка и тестирование программных модулей",
-                  "missedTotal": 8,
-                  "missedBad": 0,
-                  "missedExcused": 8
+                  "student": "Сулейменова Елизавета Даулеткалиевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Аниськов Никита Игоревич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Бормухамбетова Азалина Куанышевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Кенгурова Вероника Сергеевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "МДК 04.01 Основы менеджмента",
+                  "missedTotal": 16,
+                  "missedBad": 16,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Корецкая Алиса Дмитриевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Обидина Александра Игоревна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Ларкин Кирилл Викторович",
+                  "student": "Арефьева Мария Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3д1",
+              "totalMissed": 10,
+              "students": [
+                {
+                  "student": "Гаузер Виолетта Андреевна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Муздакбаева Дана Азаматовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дмитриева Ульяна Викторовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Трубникова Анна Юрьевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ермилова Анна Алексеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1д3",
+              "totalMissed": 14,
+              "students": [
+                {
+                  "student": "Макеева Татьяна Андреевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бунина Екатерина Дмитриевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Магурин Артём Евгеньевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4р1",
+              "totalMissed": 2,
+              "students": [
+                {
+                  "student": "Акимова Полина Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             }
@@ -591,99 +1857,543 @@
     },
     {
       "department": "Отделение экономики",
-      "totalMissed": 40,
+      "totalMissed": 340,
       "specialties": [
         {
-          "specialty": "38.02.07 Банковское дело",
-          "totalMissed": 32,
+          "specialty": "",
+          "totalMissed": 340,
           "groups": [
             {
-              "group": "2бд3",
-              "totalMissed": 32,
+              "group": "1бд3",
+              "totalMissed": 54,
               "students": [
                 {
-                  "student": "МДК 03.01 Выполнение работ по профессии «Агент банка»",
-                  "missedTotal": 16,
-                  "missedBad": 0,
-                  "missedExcused": 16
+                  "student": "Данилова Полина Юрьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Вълков Арсентий Сергеевич",
+                  "student": "Кихтенко Нина Ивановна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Дворецкая Виолетта Витальевна",
+                  "student": "Смарков Денис Александрович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Камалиев Оскар Русланович",
+                  "student": "Косых Софья Сергеевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иностранный язык",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 14,
+                  "missedBad": 14,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Козлов Никита Михайлович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Малышкин Роман Кириллович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Татайева Алёна Хожагелдиевна",
+                  "student": "Бузова Александра Дмитриевна",
                   "missedTotal": 4,
-                  "missedBad": 0,
-                  "missedExcused": 4
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Черкасова Дарья Игоревна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Корнилов Савелий Дмитриевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Шапилов Фёдор Евгеньевич",
+                  "student": "Емелина Наталья Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Воронкова Полина Александровна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
-            }
-          ]
-        },
-        {
-          "specialty": "38.02.01 Экономика и бухгалтерский учет (по отраслям)",
-          "totalMissed": 8,
-          "groups": [
+            },
+            {
+              "group": "3бу1",
+              "totalMissed": 34,
+              "students": [
+                {
+                  "student": "Кугучева Арина Алексеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лешина Наталья Валерьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Левченко Дарья Витальевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Провоторов Николай Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Маркова Екатерина Владимировна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Веденина Варвара Дмитриевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Калинкина Софья Николаевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Никулина Наталья Игоревна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1бу1",
+              "totalMissed": 66,
+              "students": [
+                {
+                  "student": "Дуйсенгазина Дарина Нурлановна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Клименкова Варвара Олеговна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бикмаметова Сабрина Зуфаровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иностранный язык",
+                  "missedTotal": 10,
+                  "missedBad": 10,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хопренинова Полина Дмитриевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сатмагамбетова Аяжан Курмангалиевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рогожникова Анна Евгеньевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Буева Арина Алексеевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Петрова Валерия Андреевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сапега Дарья Витальевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2бу1",
+              "totalMissed": 64,
+              "students": [
+                {
+                  "student": "Бойко Алёна Алексеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Экологические основы природопользования",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Журмухамбетова Амина Нургалеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Имамоглу Эге Исмаилович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Семенцова Эльвина Валерьевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ничкова Арина Егоровна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кочагина Вероника Денисовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гончарова Яна Павловна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Экономика организации",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3бд1",
+              "totalMissed": 24,
+              "students": [
+                {
+                  "student": "Савченко Ангелина Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Джалалова Лейла Арифовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Короткова Снежана Вадимовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Корабельникова Ярослава Геннадьевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Лазутин Дени Асрудинович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Муравьева Татьяна Вячеславовна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гаврилова Арина Денисовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Прилепина Виктория Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Основы страхования",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
             {
               "group": "1бу3",
               "totalMissed": 8,
               "students": [
                 {
-                  "student": "Абдульманова Алина Рамилевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Жаббарова Софья Артемовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
                   "student": "Мусаев Денис Русланович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Платонова Мария Алексеевна",
+                  "student": "Серикова Ксения Александровна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Власенко Виктория Александровна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Стручков Георгий Дмитриевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1бд1",
+              "totalMissed": 32,
+              "students": [
+                {
+                  "student": "Веселова Анна Антоновна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Курбанов Данис Линурович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Беляков Илья Вячеславович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Одинцова София Андреевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Терещенко Яна Владимировна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Глазунова Полина Евгеньевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шабоян Калепсик Овиковна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3бд3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Громакова Дарья Дмитриевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дородникова Александра Евгеньевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сипатова Дарья Алексеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шауханов Самат Арманович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2бд3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Вълков Арсентий Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Камалиев Оскар Русланович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4бу1",
+              "totalMissed": 18,
+              "students": [
+                {
+                  "student": "Мусаева Милена Андреевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шабанов Алексей Артемович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Базарбаева Айнура Махабатовна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гнилицкий Александр Алексеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гросс София Валерьевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хвостова Карина Сергеевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3бу3",
+              "totalMissed": 8,
+              "students": [
+                {
+                  "student": "Занозин Евгений Константинович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Старунова Мария Юрьевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2бд1",
+              "totalMissed": 16,
+              "students": [
+                {
+                  "student": "Нескина Ксения Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Маслова Анастасия Алексеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Погорелов Сергей Алексеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Ситникова Александра Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 }
               ]
             }
@@ -692,208 +2402,544 @@
       ]
     },
     {
-      "department": "Отделение информационных технологий и беспилотников",
-      "totalMissed": 92,
+      "department": "Отделение программирования",
+      "totalMissed": 380,
       "specialties": [
         {
-          "specialty": "09.02.07 Информационные системы и программирование",
-          "totalMissed": 84,
+          "specialty": "",
+          "totalMissed": 380,
           "groups": [
             {
-              "group": "1ис1",
+              "group": "1вб2",
+              "totalMissed": 10,
+              "students": [
+                {
+                  "student": "Кумуков Игнатий Павлович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Новичкова Анна Владимировна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Андрюшкина Маргарита Евгеньевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Сырков Даниил Андреевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1пк1",
+              "totalMissed": 46,
+              "students": [
+                {
+                  "student": "Григорян Милана Геннадьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Бантюкова Ирина Сергеевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Решетников Егор Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Балканы Савелий Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Калиев Евгений Жалгасович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Высочина Александра Евгеньевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кубаев Арман Бауржанович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 12,
+                  "missedBad": 12,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2пк2",
               "totalMissed": 12,
               "students": [
                 {
-                  "student": "Основы проектирования баз данных",
+                  "student": "Омельницкая Екатерина Ивановна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Горбунова Ольга Васильевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Компьютерные сети",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кузнецов Владислав Андреевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3вб3",
+              "totalMissed": 16,
+              "students": [
+                {
+                  "student": "Романов Олег Максимович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Площенко Кирилл Алексеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Мастрюков Антон Витальевич",
                   "missedTotal": 6,
-                  "missedBad": 0,
-                  "missedExcused": 6
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Давлетшина Диана Олеговна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Решилова Анастасия Павловна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Селиверстов Денис Николаевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Верпш Егор Юрьевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "1ис2",
-              "totalMissed": 4,
+              "group": "4вб1",
+              "totalMissed": 120,
               "students": [
                 {
-                  "student": "Кан Александр Юрьевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Пфейфер Иван Александрович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Шкирин Дмитрий Иванович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Горшков Даниил Дмитриевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Гатин Ян Талгатович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Балакина Варвара Сергеевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Иванова Вероника Ивановна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Голосняк Юлия Викторовна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "УП.09 Учебная практика",
+                  "missedTotal": 60,
+                  "missedBad": 60,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Дмитриев Григорий Дмитриевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Петрова Виктория Владимировна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Брынцева Дарья Игнатьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шевцов Кирилл Сергеевич",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
                 }
               ]
             },
             {
-              "group": "3ис1",
-              "totalMissed": 68,
+              "group": "4вб3",
+              "totalMissed": 44,
               "students": [
                 {
-                  "student": "МДК 05.03 Тестирование информационных систем",
-                  "missedTotal": 34,
-                  "missedBad": 0,
-                  "missedExcused": 34
+                  "student": "Зиновьев Дмитрий Витальевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Бакуменко Алина Анатольевна",
+                  "student": "Сафин Артур Мехриддинович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Богданов Богдан Сергеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Скандаков Данила Андреевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Давлятов Ильдар Расулович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Садыков Вячеслав Маратович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Дикарев Андрей Сергеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Саксонов Роман Максимович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Дурасов Кирилл Владимирович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Аршанов Рафаэль Аскатович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Иванов Никита Алексеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Зайцев Артем Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Карпов Алексей Алексеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Кажаев Матвей Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Киреев Александр Олегович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Плаксин Владислав Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Лимонов Кирилл Александрович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Совертков Семен Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Мазина Алёна Денисовна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Кокорин Арсений Тарасович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Попова Анастасия Олеговна",
+                  "student": "Матюнин Сергей Станиславович",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Рауткин Дмитрий Олегович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Ряжнов Илья Александрович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Свириденко Кирилл Алексеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Стрекалова Анастасия Александровна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Фатнев Николай Викторович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
-                },
-                {
-                  "student": "Филиппова Виктория Сергеевна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
-            }
-          ]
-        },
-        {
-          "specialty": "09.02.06 Сетевое и системное администрирование",
-          "totalMissed": 8,
-          "groups": [
+            },
             {
-              "group": "1са3",
-              "totalMissed": 8,
+              "group": "2вб3",
+              "totalMissed": 34,
               "students": [
                 {
-                  "student": "Объедков Никита Александрович",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Кротова Зоя Дмитриевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Пегова Мария Михайловна",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Никифоров Арсений Денисович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Погребнов Егор Сергеевич",
-                  "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "student": "Пак Вячеслав Александрович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
                 },
                 {
-                  "student": "Серединов Матвей Алексеевич",
+                  "student": "Скоян Софья Андраниковна",
                   "missedTotal": 2,
-                  "missedBad": 0,
-                  "missedExcused": 2
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Физическая культура",
+                  "missedTotal": 10,
+                  "missedBad": 10,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шавкатов Бехрузбек Темур Угли",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Шантасова Диана Амандыковна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Джулаев Данил Евгеньевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2вб1",
+              "totalMissed": 2,
+              "students": [
+                {
+                  "student": "Заполин Владислав Сергеевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1вб1",
+              "totalMissed": 18,
+              "students": [
+                {
+                  "student": "Даутов Рифат Эльмирович",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Максимова Елена Алексеевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Щербинина Александра Юрьевна",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "3пк1",
+              "totalMissed": 20,
+              "students": [
+                {
+                  "student": "Еременко Михаил Юрьевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Буглаков Егор Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Балабуркина Ксения Николаевна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Горскина Карина Алексеевна",
+                  "missedTotal": 8,
+                  "missedBad": 8,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "1вб3(б)",
+              "totalMissed": 12,
+              "students": [
+                {
+                  "student": "Болквадзе Георгий Мевлудович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кривцов Никита Михайлович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кузнецова Ульяна Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2вб2",
+              "totalMissed": 2,
+              "students": [
+                {
+                  "student": "Шмелев Денис Евгеньевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "4вб2",
+              "totalMissed": 32,
+              "students": [
+                {
+                  "student": "Халин Александр Николаевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Кириенко Евгений Валентинович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Егоров Иван Алексеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Хвостов Юрий Иванович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Рахматуллин Вадим Русланович",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Студенко Никита Сергеевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Макеева Марина Александровна",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Катибергенов Егор Евгеньевич",
+                  "missedTotal": 4,
+                  "missedBad": 4,
+                  "missedExcused": 0
+                }
+              ]
+            },
+            {
+              "group": "2пк1",
+              "totalMissed": 12,
+              "students": [
+                {
+                  "student": "Нагаев Данила Андреевич",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Основы философии",
+                  "missedTotal": 6,
+                  "missedBad": 6,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Михина Диана Юрьевна",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
+                },
+                {
+                  "student": "Елфимов Никита Иванович",
+                  "missedTotal": 2,
+                  "missedBad": 2,
+                  "missedExcused": 0
                 }
               ]
             }

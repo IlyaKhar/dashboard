@@ -4,14 +4,16 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gin-gonic/gin"
+	"dashboard/internal/models"
 	"dashboard/internal/pkg/validator"
 	"dashboard/internal/services"
+
+	"github.com/gin-gonic/gin"
 )
 
 type DashboardHandler struct {
 	attendanceService *services.AttendanceService
-	alertsThreshold  int
+	alertsThreshold   int
 }
 
 func NewDashboardHandler(attendanceService *services.AttendanceService, alertsThreshold int) *DashboardHandler {
@@ -37,13 +39,26 @@ func (h *DashboardHandler) List(c *gin.Context) {
 }
 
 func (h *DashboardHandler) Summary(c *gin.Context) {
-	departments, flat, err := h.attendanceService.LoadFromJSON()
+	params := services.ParseFilterParams(c.Request)
+
+	// Если запрошен конкретный день / диапазон / период — используем накопительную историю
+	// (attendance_history.json). Без фильтров — оперативный режим по последнему дню.
+	var (
+		departments []models.DepartmentJSON
+		flat        []models.FlatRecord
+		err         error
+	)
+
+	if params.Date != "" || params.DateFrom != "" || params.DateTo != "" || params.Period != "" {
+		departments, flat, err = h.attendanceService.LoadHistoryJSON()
+	} else {
+		departments, flat, err = h.attendanceService.LoadFromJSON()
+	}
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Cannot load attendance"})
 		return
 	}
 
-	params := services.ParseFilterParams(c.Request)
 	filtered := h.attendanceService.Filter(flat, params)
 	summary := h.attendanceService.BuildSummary(departments, filtered)
 

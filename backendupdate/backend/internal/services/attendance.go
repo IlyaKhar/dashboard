@@ -121,6 +121,24 @@ func (s *AttendanceService) LoadFromJSON() ([]models.DepartmentJSON, []models.Fl
 	return departments, flat, nil
 }
 
+// LoadHistoryJSON читает накопительный файл истории посещаемости (attendance_history.json),
+// если он существует. Если файла нет — падает обратно на обычный attendance.json.
+func (s *AttendanceService) LoadHistoryJSON() ([]models.DepartmentJSON, []models.FlatRecord, error) {
+	if s.attendancePath == "" || s.jsonStore == nil {
+		return nil, nil, fmt.Errorf("attendance service is not configured with paths")
+	}
+
+	historyPath := strings.Replace(s.attendancePath, "attendance.json", "attendance_history.json", 1)
+	departments, err := data.LoadJSON[[]models.DepartmentJSON](s.jsonStore, historyPath)
+	if err != nil || len(departments) == 0 {
+		// Если истории ещё нет — используем обычный файл.
+		return s.LoadFromJSON()
+	}
+
+	flat := models.Flatten(departments)
+	return departments, flat, nil
+}
+
 // loadVedomostDepartments читает vedomost.json: поддерживает формат с period+departments и старый формат (только массив).
 func loadVedomostDepartments(store *data.JSONStore, path string) ([]models.VedomostDepartment, error) {
 	root, err := data.LoadJSON[models.VedomostRoot](store, path)
@@ -135,12 +153,19 @@ func loadVedomostDepartments(store *data.JSONStore, path string) ([]models.Vedom
 	return arr, nil
 }
 
-// LoadFlatForDate возвращает плоский список записей для указанной даты. Для сверки (reconcile) и истории:
-// приоритет — attendance.json по выбранной дате (корректно по дням 24–28 и т.д.); если за эту дату записей нет — vedomost.
+// LoadFlatForDate возвращает плоский список записей для указанной даты.
+// Для сверки (reconcile) и истории используем только детальную посещаемость:
+//   - сначала ищем в накопительной истории (attendance_history.json),
+//   - затем в последнем файле attendance.json.
+//
+// Если за эту дату записей нет вообще — возвращаем пустой список (все считаются присутствующими).
 func (s *AttendanceService) LoadFlatForDate(date string) ([]models.FlatRecord, error) {
 	if s.attendancePath != "" && s.jsonStore != nil {
-		_, flat, err := s.LoadFromJSON()
-		if err == nil {
+		// Сначала пробуем искать в истории.
+		historyPath := strings.Replace(s.attendancePath, "attendance.json", "attendance_history.json", 1)
+		departments, err := data.LoadJSON[[]models.DepartmentJSON](s.jsonStore, historyPath)
+		if err == nil && len(departments) > 0 {
+			flat := models.Flatten(departments)
 			out := make([]models.FlatRecord, 0, len(flat)/7)
 			for _, rec := range flat {
 				if rec.Date == date {
@@ -151,13 +176,19 @@ func (s *AttendanceService) LoadFlatForDate(date string) ([]models.FlatRecord, e
 				return out, nil
 			}
 		}
-	}
-	if s.vedomostPath != "" && s.jsonStore != nil {
-		departments, err := loadVedomostDepartments(s.jsonStore, s.vedomostPath)
-		if err != nil {
-			return nil, fmt.Errorf("загрузка vedomost: %w", err)
+
+		// Если истории нет или по этой дате там пусто — пробуем обычный файл.
+		if _, flat, err := s.LoadFromJSON(); err == nil {
+			out := make([]models.FlatRecord, 0, len(flat)/7)
+			for _, rec := range flat {
+				if rec.Date == date {
+					out = append(out, rec)
+				}
+			}
+			if len(out) > 0 {
+				return out, nil
+			}
 		}
-		return models.VedomostToFlat(departments, date), nil
 	}
 	return []models.FlatRecord{}, nil
 }
@@ -276,9 +307,9 @@ func todayAdd(days int) string {
 }
 
 type SummaryResponse struct {
-	TotalStudents int            `json:"total_students"`
-	Present       int            `json:"present"`
-	Absent        int            `json:"absent"`
+	TotalStudents int             `json:"total_students"`
+	Present       int             `json:"present"`
+	Absent        int             `json:"absent"`
 	ByDepartment  []DeptDrillItem `json:"by_department,omitempty"`
 }
 

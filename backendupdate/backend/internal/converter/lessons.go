@@ -46,17 +46,16 @@ type LessonsOutput struct {
 	TotalStudents int            `json:"totalStudents"` // Общее количество студентов
 }
 
-// ConvertLessons конвертирует файл "Проба.xlsx" (расписание занятий) в JSON
-// inputFile - путь к файлу Проба.xlsx
+// ConvertLessons конвертирует Excel-отчёт с расписанием занятий в JSON.
+// В текущей архитектуре основной источник данных — сетка расписания (расписание.xls) и ОКЭИ,
+// однако функция остаётся для прямой конвертации Excel в schedule.json при необходимости.
 // outputFile - путь к выходному JSON файлу
 func ConvertLessons(inputFile, outputFile string) error {
-	fmt.Printf("[DEBUG] Открытие файла: %s\n", inputFile)
 	f, err := excelize.OpenFile(inputFile)
 	if err != nil {
 		return fmt.Errorf("ошибка открытия файла: %v", err)
 	}
 	defer f.Close()
-	fmt.Printf("[DEBUG] Файл успешно открыт\n")
 
 	sheetName := f.GetSheetName(0)
 	if sheetName == "" {
@@ -67,10 +66,8 @@ func ConvertLessons(inputFile, outputFile string) error {
 	if err != nil {
 		return fmt.Errorf("ошибка чтения строк: %v", err)
 	}
-	fmt.Printf("[DEBUG] Прочитано строк: %d\n", len(rows))
 
 	// Ищем строку с заголовками таблицы
-	headerRow := -1
 	dataStartRow := -1
 
 	for i, row := range rows {
@@ -84,7 +81,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 			(strings.Contains(rowText, "Студент") || strings.Contains(rowText, "Студенты")) &&
 			strings.Contains(rowText, "Дата") &&
 			strings.Contains(rowText, "Дисциплина") {
-			headerRow = i
 			dataStartRow = i + 1
 			break
 		}
@@ -93,9 +89,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 	if dataStartRow == -1 {
 		// Если не нашли заголовки, начинаем с 5-й строки (после параметров)
 		dataStartRow = 5
-		fmt.Printf("[DEBUG] Заголовки не найдены, начинаем с строки %d\n", dataStartRow)
-	} else {
-		fmt.Printf("[DEBUG] Заголовки найдены в строке %d, данные начинаются с %d\n", headerRow, dataStartRow)
 	}
 
 	// Определяем индексы колонок
@@ -123,9 +116,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 	colTeacher = 4    // E: преподаватель
 	colAttendance = 6 // G: явка
 
-	fmt.Printf("[DEBUG] Используем колонки (lessons): Группа/Студент/Дата=0 (колонка A), Дисциплина=%d, Преподаватель=%d, Явка=%d\n",
-		colDiscipline, colTeacher, colAttendance)
-
 	// Ищем период в параметрах (первые строки)
 	period := ""
 	for i := 0; i < dataStartRow && i < len(rows); i++ {
@@ -148,26 +138,10 @@ func ConvertLessons(inputFile, outputFile string) error {
 	var currentStudentLessons *StudentLessons
 
 	// Обрабатываем данные
-	processedRows := 0
-	debugLimit := 100 // Увеличиваем лимит отладки
 	for i := dataStartRow; i < len(rows); i++ {
 		row := rows[i]
 		if len(row) == 0 {
 			continue
-		}
-
-		// Временное логирование первых строк для отладки
-		if processedRows < debugLimit {
-			fmt.Printf("[DEBUG ROW %d] Колонок: %d, Данные: ", i+1, len(row))
-			for j := 0; j < len(row) && j < 7; j++ {
-				val := strings.TrimSpace(row[j])
-				if len(val) > 20 {
-					val = val[:20] + "..."
-				}
-				fmt.Printf("[%d]'%s' ", j, val)
-			}
-			fmt.Println()
-			processedRows++
 		}
 
 		// Пропускаем служебные строки
@@ -233,9 +207,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 					TotalStudents: 0,
 				}
 			}
-			if processedRows < debugLimit {
-				fmt.Printf("[DEBUG] Найдена группа '%s'\n", currentGroup)
-			}
 			continue
 		}
 
@@ -269,9 +240,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 				})
 				currentStudentLessons = &groupObj.Students[len(groupObj.Students)-1]
 				groupObj.TotalStudents++
-				if processedRows < debugLimit {
-					fmt.Printf("[DEBUG] Найден студент '%s' в группе '%s'\n", currentStudent, currentGroup)
-				}
 			}
 			continue
 		}
@@ -284,9 +252,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 
 		// Если нет студента - пропускаем запись занятия
 		if currentStudent == "" || currentStudentLessons == nil {
-			if processedRows < debugLimit {
-				fmt.Printf("[DEBUG] Пропуск строки %d: нет студента для группы '%s' (дата='%s')\n", i+1, currentGroup, colAValue)
-			}
 			continue
 		}
 
@@ -310,9 +275,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 
 		// Пропускаем, если нет даты или дисциплины
 		if date == "" || discipline == "" {
-			if processedRows < debugLimit {
-				fmt.Printf("[DEBUG] Пропуск строки %d: нет даты или дисциплины (date='%s', discipline='%s', student='%s')\n", i+1, date, discipline, currentStudent)
-			}
 			continue
 		}
 
@@ -330,10 +292,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 			Attendance: attendance,
 		})
 		currentStudentLessons.TotalCount++
-
-		if processedRows < debugLimit {
-			fmt.Printf("[DEBUG] Добавлена запись: студент='%s', дата='%s', дисциплина='%s'\n", currentStudent, date, discipline)
-		}
 	}
 
 	// Обновляем общее количество студентов в группах
@@ -343,7 +301,6 @@ func ConvertLessons(inputFile, outputFile string) error {
 		group.Department = departmentForGroup(group.Group)
 		group.TotalStudents = len(group.Students)
 		totalStudents += group.TotalStudents
-		fmt.Printf("[DEBUG] Группа '%s': %d студентов\n", group.Group, group.TotalStudents)
 	}
 
 	// Преобразуем map в slice

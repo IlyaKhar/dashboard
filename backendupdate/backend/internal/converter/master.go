@@ -43,7 +43,7 @@ func ConvertMaster(
 		if _, err := os.Stat(inputFileXLS); os.IsNotExist(err) {
 			return nil, fmt.Errorf("файл не найден: %s", inputFileXLS)
 		}
-		
+
 		// Пробуем найти уже существующий XLSX
 		inputFileXLSX = strings.TrimSuffix(inputFileXLS, ".xls") + ".xlsx"
 		if _, err := os.Stat(inputFileXLSX); os.IsNotExist(err) {
@@ -82,6 +82,12 @@ func ConvertMaster(
 
 	// Шаг 4: Извлекаем все данные из файла
 	extracted := extractAllData(rows)
+	// Если в файле нет явной сводной ведомости, но есть детальная посещаемость,
+	// строим сводную ведомость агрегированно из attendance (по студентам).
+	if len(extracted.VedomostData) == 0 && len(extracted.AttendanceRecords) > 0 {
+		log.Printf("[ConvertMaster] В файле не найдена сводная ведомость, строим vedomost.json из attendance...")
+		extracted.VedomostData = aggregateAttendanceToVedomost(extracted.AttendanceRecords)
+	}
 
 	// Шаг 5: Генерируем JSON файлы
 	if err := os.MkdirAll(outputDir, 0o755); err != nil {
@@ -107,6 +113,15 @@ func ConvertMaster(
 			result.Errors = append(result.Errors, fmt.Sprintf("attendance.json: %v", err))
 		} else {
 			result.AttendanceOutput = attendancePath
+
+			// Обновляем накопительную историю посещаемости (attendance_history.json):
+			// добавляем текущий день к уже сохранённым датам или обновляем записи за ту же дату.
+			historyPath := filepath.Join(outputDir, "attendance_history.json")
+			if err := UpdateAttendanceHistory(attendancePath, historyPath); err != nil {
+				log.Printf("[ConvertMaster] Предупреждение: не удалось обновить историю посещаемости: %v", err)
+			} else {
+				log.Printf("[ConvertMaster] ✓ История посещаемости обновлена: %s", historyPath)
+			}
 		}
 	} else {
 		result.Warnings = append(result.Warnings, "Не найдены записи детальной посещаемости")
@@ -129,10 +144,10 @@ func ConvertMaster(
 
 // ExtractedData все данные, извлечённые из файла
 type ExtractedData struct {
-	Students         []studentContingentItem
+	Students          []studentContingentItem
 	AttendanceRecords []attendanceRecordItem
-	VedomostData     []vedomostItem
-	VedomostPeriod   string // период из шапки сводной ведомости (Период: ДД.ММ.ГГГГ - ДД.ММ.ГГГГ)
+	VedomostData      []vedomostItem
+	VedomostPeriod    string // период из шапки сводной ведомости (Период: ДД.ММ.ГГГГ - ДД.ММ.ГГГГ)
 }
 
 type studentContingentItem struct {
@@ -161,6 +176,45 @@ type vedomostItem struct {
 	MissedExcused int
 }
 
+// aggregateAttendanceToVedomost агрегирует детальную посещаемость по студентам
+// в структуру сводной ведомости: накапливаем суммарное количество пропусков.
+// Информации о "уважительной/неуважительной" у нас нет, поэтому все часы
+// считаем как MissedBad, а MissedTotal = сумма всех пропусков.
+func aggregateAttendanceToVedomost(records []attendanceRecordItem) []vedomostItem {
+	if len(records) == 0 {
+		return nil
+	}
+
+	m := make(map[string]*vedomostItem)
+	for _, r := range records {
+		if r.Missed <= 0 {
+			continue
+		}
+		key := r.Department + "|" + r.Group + "|" + r.Student
+		item, ok := m[key]
+		if !ok {
+			item = &vedomostItem{
+				Department:    r.Department,
+				Specialty:     "",
+				Group:         r.Group,
+				Student:       r.Student,
+				MissedTotal:   0,
+				MissedBad:     0,
+				MissedExcused: 0,
+			}
+			m[key] = item
+		}
+		item.MissedTotal += r.Missed
+		item.MissedBad += r.Missed
+	}
+
+	out := make([]vedomostItem, 0, len(m))
+	for _, v := range m {
+		out = append(out, *v)
+	}
+	return out
+}
+
 // extractAllData умный парсинг файла: определяет тип данных и извлекает всё
 func extractAllData(rows [][]string) ExtractedData {
 	var data ExtractedData
@@ -168,6 +222,10 @@ func extractAllData(rows [][]string) ExtractedData {
 	var currentDepartment string
 	var currentSpecialty string
 	var currentGroup string
+
+	// Дата по умолчанию для записей посещаемости — берём из периода
+	// "Период: 04.03.2026 - 04.03.2026" → 2026-03-04.
+	attendanceDefaultDate := ""
 
 	// Проходим по всем строкам и классифицируем их
 	for _, row := range rows {
@@ -184,6 +242,16 @@ func extractAllData(rows [][]string) ExtractedData {
 		if firstCell == "Параметры:" {
 			if p := extractPeriodFromRow(row); p != "" {
 				data.VedomostPeriod = p
+				// Пытаемся вытащить левую дату периода как дату для детальной посещаемости
+				if attendanceDefaultDate == "" {
+					parts := strings.Split(p, "-")
+					if len(parts) > 0 {
+						from := strings.TrimSpace(parts[0])
+						if d := parseDateValue(from); d != "" {
+							attendanceDefaultDate = d
+						}
+					}
+				}
 			}
 			continue
 		}
@@ -227,8 +295,9 @@ func extractAllData(rows [][]string) ExtractedData {
 			continue
 		}
 
-		// Вариант 2: Строка детальной посещаемости (есть дата и пропущенные часы)
-		if date, missed := parseAttendanceRow(row); date != "" && missed > 0 {
+		// Вариант 2: Строка детальной посещаемости (есть пропущенные часы;
+		// дату берём либо из строки, либо из периода, если в самой строке её нет).
+		if date, missed := parseAttendanceRow(row, attendanceDefaultDate); date != "" && missed > 0 {
 			if currentDepartment != "" && currentGroup != "" {
 				// Ищем ФИО студента в строке
 				studentName := findStudentNameInRow(row)
@@ -268,7 +337,7 @@ func extractAllData(rows [][]string) ExtractedData {
 				if studentName != "" {
 					data.VedomostData = append(data.VedomostData, vedomostItem{
 						Department:    currentDepartment,
-						Specialty:      currentSpecialty,
+						Specialty:     currentSpecialty,
 						Group:         currentGroup,
 						Student:       studentName,
 						MissedTotal:   missedTotal,
@@ -306,33 +375,9 @@ func parseStudentRow(row []string) (numberInGroup int, fullName string) {
 	return numberInGroup, fullName
 }
 
-// parseAttendanceRow пытается найти дату и пропущенные часы
-func parseAttendanceRow(row []string) (date string, missed int) {
-	// Ищем дату в первой колонке или в колонке F
-	for _, idx := range []int{0, 5} {
-		if idx < len(row) {
-			val := strings.TrimSpace(row[idx])
-			if parsed := parseDateValue(val); parsed != "" {
-				date = parsed
-				break
-			}
-		}
-	}
-
-	// Ищем пропущенные часы (колонка F или последняя числовая колонка)
-	for i := len(row) - 1; i >= 0 && i >= 5; i-- {
-		if num, err := strconv.ParseFloat(strings.TrimSpace(row[i]), 64); err == nil && num > 0 {
-			missed = int(num)
-			break
-		}
-	}
-
-	return date, missed
-}
-
 // parseVedomostRow пытается найти пропуски из сводной ведомости
 func parseVedomostRow(row []string) (total, bad, excused int) {
-	// Структура: A (текст), B-C (пусто), D (неуваж), E (уваж), F-G (пусто), H (всего)
+	// 1. Пытаемся распарсить "старый" шаблон: A (ФИО), D (неуваж), E (уваж), H (всего).
 	if len(row) > 7 {
 		total = parseIntCell(row[7])
 	}
@@ -342,9 +387,39 @@ func parseVedomostRow(row []string) (total, bad, excused int) {
 	if len(row) > 3 {
 		bad = parseIntCell(row[3])
 	}
+	if total > 0 || excused > 0 || bad > 0 {
+		if total == 0 && excused > 0 {
+			total = excused
+		}
+		return total, bad, excused
+	}
 
-	if total == 0 && excused > 0 {
-		total = excused
+	// 2. Универсальный режим для "новых" ведомостей: берём последние числовые ячейки строки.
+	// Ищем все числа в строке, кроме первой колонки (там обычно текст: ФИО/группа).
+	nums := make([]int, 0, 4)
+	for i := 1; i < len(row); i++ {
+		if v := parseIntCell(row[i]); v > 0 {
+			nums = append(nums, v)
+		}
+	}
+	if len(nums) == 0 {
+		return 0, 0, 0
+	}
+
+	// Считаем, что последнее число в строке — "всего пропущено часов".
+	total = nums[len(nums)-1]
+
+	// Предпоследнее — "по уважительной", пред‑предпоследнее — "по неуважительной" (если есть).
+	if len(nums) >= 2 {
+		excused = nums[len(nums)-2]
+	}
+	if len(nums) >= 3 {
+		bad = nums[len(nums)-3]
+	}
+
+	// Если распределение странное, стараемся не ломать total.
+	if bad+excused > total && total > 0 {
+		bad = 0
 	}
 
 	return total, bad, excused

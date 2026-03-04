@@ -25,14 +25,8 @@ function formatDateForInput(d: Date): string {
   return `${y}-${m}-${day}`;
 }
 
-// Дефолтная дата истории — в периоде с данными (24–28.02), чтобы сводка сразу показывала актуальный период
-const STORY_DEMO_START = "2026-02-24";
-const STORY_DEMO_END = "2026-02-28";
-const DEFAULT_STORY_DATE = (() => {
-  const today = formatDateForInput(new Date());
-  if (today >= STORY_DEMO_START && today <= STORY_DEMO_END) return today;
-  return STORY_DEMO_START;
-})();
+// Дефолтная дата истории — всегда сегодняшняя
+const DEFAULT_STORY_DATE = formatDateForInput(new Date());
 
 /** Реальные данные по 6 парам из lessonsData; fallback — одна строка за день */
 function storyDayToAttendanceRows(

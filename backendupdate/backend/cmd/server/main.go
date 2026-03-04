@@ -121,12 +121,20 @@ func main() {
 		log.Fatalf("[Server] Ошибка настройки cron: %v", err)
 	}
 
-	// Расписание с сайта ОКЭИ — раз в неделю, понедельник 03:00
+	// Расписание с сайта ОКЭИ:
+	// 1) раз в неделю по cron (понедельник 03:00)
+	// 2) один раз при старте сервера, чтобы не ждать cron.
 	if cfg.OkseiScheduleURL != "" {
+		// Еженедельный cron
 		_, err = c.AddFunc("0 3 * * 1", func() {
-			log.Println("[Server] Запуск выгрузки расписания с сайта ОКЭИ...")
-			if err := fetcher.FetchScheduleFromOkseiPage(cfg.OkseiScheduleURL, cfg.OkseiScheduleOutput, cfg.PythonScript); err != nil {
-				log.Printf("[Server] Ошибка выгрузки расписания ОКЭИ: %v", err)
+			log.Println("[Server] Запуск выгрузки расписания с сайта ОКЭИ (cron)...")
+			if err := fetcher.FetchScheduleFromOkseiPage(
+				cfg.OkseiScheduleURL,
+				cfg.OkseiScheduleOutput,
+				cfg.PythonScript,
+				converterDir,
+			); err != nil {
+				log.Printf("[Server] Ошибка выгрузки расписания ОКЭИ (cron): %v", err)
 				return
 			}
 			log.Println("[Server] Расписание с сайта ОКЭИ сохранено в", cfg.OkseiScheduleOutput)
@@ -135,6 +143,19 @@ func main() {
 			log.Printf("[Server] Предупреждение: не удалось добавить cron расписания ОКЭИ: %v", err)
 		} else {
 			log.Println("[Server] Cron расписания ОКЭИ: понедельник 03:00")
+		}
+
+		// Первичная выгрузка при старте
+		log.Println("[Server] Первичная выгрузка расписания ОКЭИ при старте...")
+		if err := fetcher.FetchScheduleFromOkseiPage(
+			cfg.OkseiScheduleURL,
+			cfg.OkseiScheduleOutput,
+			cfg.PythonScript,
+			converterDir,
+		); err != nil {
+			log.Printf("[Server] Ошибка первичной выгрузки расписания ОКЭИ: %v", err)
+		} else {
+			log.Printf("[Server] Расписание ОКЭИ сохранено в %s", cfg.OkseiScheduleOutput)
 		}
 	}
 

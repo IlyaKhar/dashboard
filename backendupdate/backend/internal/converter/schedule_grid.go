@@ -412,8 +412,11 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 		return fmt.Errorf("ошибка парсинга JSON студентов: %v", err)
 	}
 
-	// Создаём маппинг группа -> список студентов
+	// Создаём маппинг:
+	//  - группа -> список студентов
+	//  - группа -> отделение (из students.json, чтобы не гадать по префиксам)
 	groupStudents := make(map[string][]string)
+	groupDepartments := make(map[string]string)
 	for _, dept := range students.Departments {
 		for _, grp := range dept.Groups {
 			studentsList := []string{}
@@ -422,7 +425,11 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 					studentsList = append(studentsList, st.FullName)
 				}
 			}
-			groupStudents[strings.ToLower(grp.Group)] = studentsList
+			key := strings.ToLower(grp.Group)
+			groupStudents[key] = studentsList
+			if dept.Department != "" {
+				groupDepartments[key] = dept.Department
+			}
 		}
 	}
 
@@ -475,9 +482,14 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 		// Получаем или создаём группу
 		groupKey := strings.ToLower(record.Group)
 		if _, exists := groupsMap[groupKey]; !exists {
+			deptName := groupDepartments[groupKey]
+			if deptName == "" {
+				// Фоллбэк на heuristics, если группу не нашли в students.json
+				deptName = departmentForGroup(record.Group)
+			}
 			groupsMap[groupKey] = &GroupLessons{
 				Group:         record.Group,
-				Department:    departmentForGroup(record.Group),
+				Department:    deptName,
 				Students:      []StudentLessons{},
 				TotalStudents: 0,
 			}
