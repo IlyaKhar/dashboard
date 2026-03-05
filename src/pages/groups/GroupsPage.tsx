@@ -18,7 +18,12 @@ export function GroupsPage() {
   const routerState = location.state as {
     department?: string;
     departmentData?: DeptDrillItem;
+    mode?: "history";
+    date?: string;
   } | null;
+
+  const isHistoryMode = routerState?.mode === "history" && !!routerState.date;
+  const effectiveDate = isHistoryMode ? routerState.date! : undefined;
 
   const [level, setLevel] = useState<DrillLevel>(
     routerState?.departmentData ? "groups" : "departments"
@@ -49,7 +54,8 @@ export function GroupsPage() {
       setSelectedDept(null);
       setLevel("departments");
     } else {
-      navigate("/");
+      // Из истории возвращаемся в /story, из оперативного — на главную
+      navigate(isHistoryMode ? "/story" : "/");
     }
   }
 
@@ -61,10 +67,10 @@ export function GroupsPage() {
       </Button>
 
       {level === "departments" && (
-        <DepartmentsLevel onSelectDepartment={handleSelectDepartment} />
+        <DepartmentsLevel onSelectDepartment={handleSelectDepartment} historyDate={effectiveDate} />
       )}
       {level === "groups" && selectedDept && (
-        <GroupsLevel department={selectedDept} onSelectGroup={handleSelectGroup} />
+        <GroupsLevel department={selectedDept} onSelectGroup={handleSelectGroup} historyDate={effectiveDate} />
       )}
       {level === "analytics" && selectedDept && selectedGroup && (
         <AnalyticsLevel

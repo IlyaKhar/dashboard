@@ -30,17 +30,15 @@ export function DepartmentsPage() {
       }
     | null;
 
-  const effectiveDate =
-    routerState?.mode === "history" && routerState.date
-      ? routerState.date
-      : getOperationalDate();
+  const isHistoryMode = routerState?.mode === "history" && !!routerState.date;
+  const effectiveDate = isHistoryMode ? routerState.date! : getOperationalDate();
 
   const { data: departments, isLoading, error, refetch } = useFetch(
     (signal) => fetchDrillDepartments(signal),
     []
   );
 
-  // Мониторинг: данные только за сегодня
+  // Данные по парам за выбранную дату (историческую или оперативную)
   const {
     data: lessonsData,
     isLoading: lessonsLoading,
@@ -54,7 +52,7 @@ export function DepartmentsPage() {
         )
       ),
     [effectiveDate],
-    { pollingInterval: POLLING_INTERVAL }
+    { pollingInterval: isHistoryMode ? 0 : POLLING_INTERVAL }
   );
 
   // Формируем данные по парам для каждого отделения
@@ -97,20 +95,31 @@ export function DepartmentsPage() {
 
   function handleClick(dept: DeptDrillItem) {
     navigate("/groups", {
-      state: { department: dept.department, departmentData: dept },
+      state: {
+        department: dept.department,
+        departmentData: dept,
+        // Прокидываем историческую дату дальше по цепочке
+        ...(isHistoryMode ? { mode: "history", date: effectiveDate } : {}),
+      },
     });
   }
 
   return (
     <div className="space-y-6">
       <Button
-        onClick={() => navigate("/")}
+        onClick={() => navigate(isHistoryMode ? "/story" : "/")}
         variant="default"
         className="h-10 px-4 py-2"
       >
         <ArrowLeft className="mr-2 h-4 w-4" />
         Вернуться назад
       </Button>
+
+      {isHistoryMode && (
+        <p className="text-sm text-muted-foreground">
+          Историческая дата: <strong>{effectiveDate}</strong>
+        </p>
+      )}
 
       {isLoading && <Loader text="Загрузка отделений..." />}
       {error && <ErrorState message={error} onRetry={refetch} />}

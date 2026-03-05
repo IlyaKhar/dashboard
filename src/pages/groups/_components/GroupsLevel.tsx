@@ -18,10 +18,12 @@ const POLLING_INTERVAL = 30_000;
 interface GroupsLevelProps {
   department: DeptDrillItem;
   onSelectGroup: (group: GroupDrillItem) => void;
+  /** Историческая дата; если не передана — используем оперативную */
+  historyDate?: string;
 }
 
-export function GroupsLevel({ department, onSelectGroup }: GroupsLevelProps) {
-  const operationalDate = getOperationalDate();
+export function GroupsLevel({ department, onSelectGroup, historyDate }: GroupsLevelProps) {
+  const operationalDate = historyDate ?? getOperationalDate();
 
   const {
     data: groups,

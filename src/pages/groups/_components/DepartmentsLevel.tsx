@@ -17,10 +17,12 @@ const POLLING_INTERVAL = 30_000;
 
 interface DepartmentsLevelProps {
   onSelectDepartment: (dept: DeptDrillItem) => void;
+  /** Историческая дата; если не передана — используем оперативную */
+  historyDate?: string;
 }
 
-export function DepartmentsLevel({ onSelectDepartment }: DepartmentsLevelProps) {
-  const operationalDate = getOperationalDate();
+export function DepartmentsLevel({ onSelectDepartment, historyDate }: DepartmentsLevelProps) {
+  const operationalDate = historyDate ?? getOperationalDate();
 
   const {
     data: departments,
