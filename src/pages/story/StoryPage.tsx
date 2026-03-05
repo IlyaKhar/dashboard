@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card } from "@/shared/ui/card";
 import { DateFilter } from "@/shared/ui/dateFilter";
 import { Loader } from "@/shared/ui/loader";
@@ -97,6 +98,7 @@ const POLLING_INTERVAL = 30_000;
 
 export function StoryPage() {
   const [selectedDate, setSelectedDate] = useState(() => DEFAULT_STORY_DATE);
+  const navigate = useNavigate();
 
   // Сводка за день (для карточек и пирога)
   const {
@@ -221,6 +223,15 @@ export function StoryPage() {
               <AttendanceTable
                 attendance={attendance}
                 header="Статистика посещаемости по дням"
+                onRowClick={(lessonIndex) =>
+                  navigate("/departments", {
+                    state: {
+                      mode: "history",
+                      date: selectedDate,
+                      lesson: lessonIndex + 1,
+                    },
+                  })
+                }
               />
             </div>
           </div>

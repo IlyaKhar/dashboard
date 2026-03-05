@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/shared/ui/button";
 import { Loader } from "@/shared/ui/loader";
 import { ErrorState } from "@/shared/ui/errorState";
@@ -20,7 +20,20 @@ const POLLING_INTERVAL = 30_000;
 
 export function DepartmentsPage() {
   const navigate = useNavigate();
-  const operationalDate = getOperationalDate();
+  const location = useLocation();
+
+  const routerState = location.state as
+    | {
+        mode?: "history";
+        date?: string;
+        lesson?: number;
+      }
+    | null;
+
+  const effectiveDate =
+    routerState?.mode === "history" && routerState.date
+      ? routerState.date
+      : getOperationalDate();
 
   const { data: departments, isLoading, error, refetch } = useFetch(
     (signal) => fetchDrillDepartments(signal),
@@ -37,10 +50,10 @@ export function DepartmentsPage() {
     (signal) =>
       Promise.all(
         ([1, 2, 3, 4, 5, 6] as const).map((n) =>
-          fetchAttendanceReconcileDay(operationalDate, signal, n)
+          fetchAttendanceReconcileDay(effectiveDate, signal, n)
         )
       ),
-    [operationalDate],
+    [effectiveDate],
     { pollingInterval: POLLING_INTERVAL }
   );
 
