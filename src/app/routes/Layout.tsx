@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Button } from "@/shared/ui/button";
 import { LogIn, ArrowRight } from "lucide-react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
-function formatDateTime(): { date: string; time: string } {
-  const now = new Date();
-  const formatted = now.toLocaleString("ru-RU", {
+const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
+
+/** Форматирует Date в { date: "5 марта", time: "12:48" } */
+function formatDateTime(d: Date): { date: string; time: string } {
+  const formatted = d.toLocaleString("ru-RU", {
     day: "numeric",
     month: "long",
     hour: "2-digit",
@@ -15,15 +17,44 @@ function formatDateTime(): { date: string; time: string } {
   return { date: date ?? "", time: time ?? "" };
 }
 
+/** Запрашивает серверное время через /api/health */
+async function fetchServerTime(): Promise<Date> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/health`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data.server_time) return new Date(data.server_time);
+    }
+  } catch {
+    // Если сервер недоступен — fallback на клиентское время
+  }
+  return new Date();
+}
+
 export default function Layout() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [dateTime, setDateTime] = useState(formatDateTime);
-  useEffect(() => {
-    const interval = setInterval(() => setDateTime(formatDateTime()), 60_000);
-    return () => clearInterval(interval);
+  // Серверное время: при загрузке берём с сервера, потом тикаем локально
+  const serverOffsetRef = useRef(0); // разница: serverTime - clientTime (мс)
+  const [dateTime, setDateTime] = useState(() => formatDateTime(new Date()));
+
+  const updateDisplay = useCallback(() => {
+    const corrected = new Date(Date.now() + serverOffsetRef.current);
+    setDateTime(formatDateTime(corrected));
   }, []);
+
+  useEffect(() => {
+    // При монтировании запрашиваем серверное время
+    fetchServerTime().then((serverNow) => {
+      serverOffsetRef.current = serverNow.getTime() - Date.now();
+      updateDisplay();
+    });
+
+    // Тикаем каждую минуту, прибавляя offset
+    const interval = setInterval(updateDisplay, 60_000);
+    return () => clearInterval(interval);
+  }, [updateDisplay]);
 
   const isStoryPage = location.pathname === "/story";
   const historyButtonLabel = isStoryPage ? "Оперативный" : "Исторический";

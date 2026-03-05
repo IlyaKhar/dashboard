@@ -212,8 +212,9 @@ func (h *GinHandler) GetRefreshHistory(c *gin.Context) {
 // @Router /health [get]
 func (h *GinHandler) HealthCheck(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
-		"status":  "ok",
-		"service": "dashboard-backend",
+		"status":      "ok",
+		"service":     "dashboard-backend",
+		"server_time": time.Now().Format(time.RFC3339),
 	})
 }
 
