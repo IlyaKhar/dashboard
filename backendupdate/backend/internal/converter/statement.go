@@ -58,9 +58,22 @@ func ConvertStatement(inputFileXLS, outputFile, pythonScriptPath string) error {
 	// Шаг 1: Конвертируем XLS в XLSX (если нужно)
 	if strings.HasSuffix(strings.ToLower(inputFileXLS), ".xls") {
 		if _, err := os.Stat(inputFileXLS); err == nil {
-			if err := convertXLSToXLSX(inputFileXLS, inputFileXLSX, pythonScriptPath); err != nil {
-				fmt.Printf("Предупреждение при конвертации %s: %v\n", inputFileXLS, err)
-				fmt.Println("Продолжаем с XLSX файлом, если он существует...")
+			// Переконвертируем, если XLSX нет или он старее исходного XLS.
+			xlsInfo, xlsErr := os.Stat(inputFileXLS)
+			xlsxInfo, xlsxErr := os.Stat(inputFileXLSX)
+
+			needConvert := false
+			if os.IsNotExist(xlsxErr) {
+				needConvert = true
+			} else if xlsErr == nil && xlsxErr == nil && xlsInfo.ModTime().After(xlsxInfo.ModTime()) {
+				needConvert = true
+			}
+
+			if needConvert {
+				if err := convertXLSToXLSX(inputFileXLS, inputFileXLSX, pythonScriptPath); err != nil {
+					fmt.Printf("Предупреждение при конвертации %s: %v\n", inputFileXLS, err)
+					fmt.Println("Продолжаем с XLSX файлом, если он существует...")
+				}
 			}
 		}
 	} else {

@@ -67,7 +67,7 @@ export function GroupsLevel({ department, onSelectGroup, historyDate }: GroupsLe
       for (let lessonIndex = 0; lessonIndex < 6; lessonIndex++) {
         const lessonData = lessonsData[lessonIndex];
         // Ищем группу в отделении
-        const deptData = lessonData.byDepartment.find(
+        const deptData = lessonData?.byDepartment?.find(
           (d) => d.department === department.department
         );
         const groupData = deptData?.byGroup.find(

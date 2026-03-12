@@ -2,13 +2,15 @@ package services
 
 import (
 	"fmt"
+	"strings"
 	"time"
 
 	"dashboard/internal/data"
 	"dashboard/internal/models"
 )
 
-// ScheduleService читает schedule.json и даёт удобные выборки по датам.
+// ScheduleService читает schedule.json (сегодня) и schedule_history.json (история).
+// Для поиска по дате сначала пробует историю, потом текущий файл.
 type ScheduleService struct {
 	schedulePath string
 	jsonStore    *data.JSONStore
@@ -31,91 +33,86 @@ type PlannedStudent struct {
 	Teacher    string
 }
 
+// historyPath возвращает путь к schedule_history.json на основе пути к schedule.json
+func (s *ScheduleService) historyPath() string {
+	return strings.Replace(s.schedulePath, "schedule.json", "schedule_history.json", 1)
+}
+
 // GetPlannedForDate возвращает всех студентов, которые должны быть на занятиях в указанную дату.
 // date ожидается в формате YYYY-MM-DD.
+// Сначала ищет в schedule_history.json (накопленная история), затем в schedule.json (сегодня).
 // Дедуплицирует студентов: если у студента несколько пар в день, он учитывается один раз.
 func (s *ScheduleService) GetPlannedForDate(date string) ([]PlannedStudent, error) {
 	if s.schedulePath == "" || s.jsonStore == nil {
 		return nil, fmt.Errorf("schedule service is not configured with path")
 	}
 
-	schedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, s.schedulePath)
-	if err != nil {
-		return nil, err
-	}
-
-	// schedule.json хранит даты в формате "02.02.2026 0:00:00"
 	target, err := time.Parse("2006-01-02", date)
 	if err != nil {
 		return nil, fmt.Errorf("invalid date format, expected YYYY-MM-DD: %w", err)
 	}
 	targetDay := target.Format("02.01.2006")
 
-	// Используем map для дедупликации: ключ = Department|Group|Student
-	seen := make(map[string]bool)
-	var out []PlannedStudent
-
-	for _, g := range schedule.Groups {
-		for _, st := range g.Students {
-			key := g.Department + "|" + g.Group + "|" + st.StudentName
-			// Проверяем, есть ли у студента хотя бы одна запись на эту дату
-			hasRecord := false
-			var firstRec models.ScheduleLessonRecord
-			for _, rec := range st.Records {
-				if rec.Date == "" {
-					continue
-				}
-				if !hasDatePrefix(rec.Date, targetDay) {
-					continue
-				}
-				hasRecord = true
-				firstRec = rec
-				break // Достаточно одной записи для подтверждения присутствия
-			}
-			if hasRecord && !seen[key] {
-				seen[key] = true
-				out = append(out, PlannedStudent{
-					Department: g.Department,
-					Group:      g.Group,
-					Student:    st.StudentName,
-					Date:       date,
-					Discipline: firstRec.Discipline,
-					Teacher:    firstRec.Teacher,
-				})
-			}
+	// Сначала ищем в истории
+	histPath := s.historyPath()
+	histSchedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, histPath)
+	if err == nil {
+		out := extractPlannedForDate(histSchedule, targetDay, date, 0)
+		if len(out) > 0 {
+			return out, nil
 		}
 	}
 
-	return out, nil
+	// Если в истории не нашли — ищем в текущем schedule.json
+	schedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, s.schedulePath)
+	if err != nil {
+		return nil, err
+	}
+
+	return extractPlannedForDate(schedule, targetDay, date, 0), nil
 }
 
 // GetPlannedForDateAndLesson возвращает студентов, запланированных на указанную дату и номер пары (1-6).
-// Если lessonNumber == 0, возвращает всех на дату (как GetPlannedForDate).
-// Дедуплицирует студентов: если у студента несколько записей на эту пару, он учитывается один раз.
+// Сначала ищет в schedule_history.json, затем в schedule.json.
 func (s *ScheduleService) GetPlannedForDateAndLesson(date string, lessonNumber int) ([]PlannedStudent, error) {
 	if s.schedulePath == "" || s.jsonStore == nil {
 		return nil, fmt.Errorf("schedule service is not configured with path")
 	}
 
-	schedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, s.schedulePath)
-	if err != nil {
-		return nil, err
-	}
-
 	target, err := time.Parse("2006-01-02", date)
 	if err != nil {
 		return nil, fmt.Errorf("invalid date format, expected YYYY-MM-DD: %w", err)
 	}
 	targetDay := target.Format("02.01.2006")
 
-	// Используем map для дедупликации: ключ = Department|Group|Student
+	// Сначала ищем в истории
+	histPath := s.historyPath()
+	histSchedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, histPath)
+	if err == nil {
+		out := extractPlannedForDate(histSchedule, targetDay, date, lessonNumber)
+		if len(out) > 0 {
+			return out, nil
+		}
+	}
+
+	// Если в истории не нашли — ищем в текущем schedule.json
+	schedule, err := data.LoadJSON[models.ScheduleJSON](s.jsonStore, s.schedulePath)
+	if err != nil {
+		return nil, err
+	}
+
+	return extractPlannedForDate(schedule, targetDay, date, lessonNumber), nil
+}
+
+// extractPlannedForDate извлекает запланированных студентов из schedule за конкретную дату.
+// Если lessonNumber > 0, фильтрует по номеру пары.
+func extractPlannedForDate(schedule models.ScheduleJSON, targetDay, dateISO string, lessonNumber int) []PlannedStudent {
 	seen := make(map[string]bool)
 	var out []PlannedStudent
 
 	for _, g := range schedule.Groups {
 		for _, st := range g.Students {
 			key := g.Department + "|" + g.Group + "|" + st.StudentName
-			// Проверяем, есть ли у студента запись на эту дату и пару
 			var matchingRec *models.ScheduleLessonRecord
 			for _, rec := range st.Records {
 				if rec.Date == "" {
@@ -128,7 +125,7 @@ func (s *ScheduleService) GetPlannedForDateAndLesson(date string, lessonNumber i
 					continue
 				}
 				matchingRec = &rec
-				break // Нашли подходящую запись
+				break
 			}
 			if matchingRec != nil && !seen[key] {
 				seen[key] = true
@@ -136,7 +133,7 @@ func (s *ScheduleService) GetPlannedForDateAndLesson(date string, lessonNumber i
 					Department: g.Department,
 					Group:      g.Group,
 					Student:    st.StudentName,
-					Date:       date,
+					Date:       dateISO,
 					Discipline: matchingRec.Discipline,
 					Teacher:    matchingRec.Teacher,
 				})
@@ -144,7 +141,7 @@ func (s *ScheduleService) GetPlannedForDateAndLesson(date string, lessonNumber i
 		}
 	}
 
-	return out, nil
+	return out
 }
 
 func hasDatePrefix(raw, day string) bool {
@@ -153,4 +150,3 @@ func hasDatePrefix(raw, day string) bool {
 	}
 	return raw[:len(day)] == day
 }
-

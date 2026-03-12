@@ -41,12 +41,12 @@ func SyncFromOneC(sourceDir, converterDir string) {
 
 	// С шары забираем основные файлы:
 	// - ведомость.xls / ведомость.xlsx — мастер-файл для всех JSON (students/attendance/vedomost)
-	// - расписание.xls — сетка расписания, из которой собирается schedule_grid.json и schedule.json
+	// - РасписаниеНаДату.xls — ежедневное расписание (→ schedule.json + schedule_history.json)
 	files := []string{
 		"ведомость.xls",
 		"ведомость.xlsx",
-		"расписание.xls",
-		"расписание.xlsx",
+		"РасписаниеНаДату.xls",
+		"РасписаниеНаДату.xlsx",
 		"студенты.xlsx",
 	}
 

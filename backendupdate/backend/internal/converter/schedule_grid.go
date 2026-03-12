@@ -14,21 +14,21 @@ import (
 
 // ScheduleGridRecord - запись о занятии из сетки расписания
 type ScheduleGridRecord struct {
-	DayOfWeek   string `json:"dayOfWeek"`   // День недели (Понедельник, Вторник...)
-	LessonNumber int   `json:"lessonNumber"` // Номер пары (1, 2, 3...)
-	Group       string `json:"group"`        // Группа
-	Discipline  string `json:"discipline"`   // Дисциплина
-	Teacher     string `json:"teacher"`      // Преподаватель
-	Location    string `json:"location"`     // Аудитория/локация
+	DayOfWeek    string `json:"dayOfWeek"`    // День недели (Понедельник, Вторник...)
+	LessonNumber int    `json:"lessonNumber"` // Номер пары (1, 2, 3...)
+	Group        string `json:"group"`        // Группа
+	Discipline   string `json:"discipline"`   // Дисциплина
+	Teacher      string `json:"teacher"`      // Преподаватель
+	Location     string `json:"location"`     // Аудитория/локация
 }
 
 // ScheduleGridOutput - итоговая структура для расписания из сетки
 type ScheduleGridOutput struct {
-	Period        string                `json:"period"`        // Период (например, "02.02.2026 - 08.02.2026")
-	WeekStartDate string                `json:"weekStartDate"` // Дата начала недели (YYYY-MM-DD)
-	Records       []ScheduleGridRecord  `json:"records"`       // Все записи расписания
-	Groups        []string              `json:"groups"`         // Список всех групп
-	TotalRecords  int                   `json:"totalRecords"`  // Общее количество записей
+	Period        string               `json:"period"`        // Период (например, "02.02.2026 - 08.02.2026")
+	WeekStartDate string               `json:"weekStartDate"` // Дата начала недели (YYYY-MM-DD)
+	Records       []ScheduleGridRecord `json:"records"`       // Все записи расписания
+	Groups        []string             `json:"groups"`        // Список всех групп
+	TotalRecords  int                  `json:"totalRecords"`  // Общее количество записей
 }
 
 // ConvertScheduleGrid конвертирует файл "расписание.xls" (сетка расписания) в JSON
@@ -37,7 +37,7 @@ type ScheduleGridOutput struct {
 // weekStartDate - дата начала недели (опционально, если пусто - используется текущая неделя)
 func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 	fmt.Printf("[ScheduleGrid] Открытие файла: %s\n", inputFile)
-	
+
 	// Конвертируем XLS в XLSX если нужно
 	xlsxFile := inputFile
 	if strings.HasSuffix(strings.ToLower(inputFile), ".xls") {
@@ -98,14 +98,14 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 	// Определяем структуру таблицы
 	// Ищем строку с заголовками групп (обычно первая строка с данными)
 	headerRow := -1
-	
+
 	// Сначала ищем строку с группами в первых 20 строках
 	for i := 0; i < 20 && i < len(rows); i++ {
 		row := rows[i]
 		if len(row) < 2 {
 			continue
 		}
-		
+
 		// Ищем строку, где первая колонка содержит "День недели" или "Номер пары"
 		firstCell := strings.TrimSpace(row[0])
 		if strings.Contains(firstCell, "День недели") || strings.Contains(firstCell, "Номер пары") {
@@ -113,7 +113,7 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 			fmt.Printf("[ScheduleGrid] Найдена строка с заголовками (День недели/Номер пары) в строке %d\n", i+1)
 			break
 		}
-		
+
 		// Ищем строку с группами (коды типа "1а1", "1бб1" и т.д.)
 		groupCount := 0
 		for j := 1; j < len(row) && j < 20; j++ {
@@ -154,7 +154,7 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 	headerRowData := rows[headerRow]
 	groups := []string{}
 	groupCols := make(map[string]int) // маппинг группы -> индекс колонки
-	
+
 	// Первая колонка обычно "День недели" или пустая, пропускаем
 	for j := 1; j < len(headerRowData); j++ {
 		cellValue := strings.TrimSpace(headerRowData[j])
@@ -175,7 +175,7 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 	if dataStartRow >= len(rows) {
 		return fmt.Errorf("нет данных после заголовков")
 	}
-	
+
 	// Парсим расписание
 	records := []ScheduleGridRecord{}
 	var currentDayOfWeek string
@@ -203,7 +203,7 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 		if len(row) > 0 {
 			firstCell = strings.TrimSpace(row[0])
 		}
-		
+
 		// Номер пары находится в колонке 1 (вторая колонка)
 		lessonNumCell := ""
 		if len(row) > 1 {
@@ -324,6 +324,10 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 			startDate = parsed
 		}
 	}
+	// Пробуем извлечь дату из заголовка файла (формат РасписаниеНаДату: "05.марта.2026")
+	if startDate.IsZero() {
+		startDate = extractDateFromHeader(rows)
+	}
 	if startDate.IsZero() {
 		// Используем начало текущей недели (понедельник)
 		now := time.Now()
@@ -340,11 +344,11 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 
 	// Формируем итоговую структуру
 	output := ScheduleGridOutput{
-		Period:       period,
+		Period:        period,
 		WeekStartDate: startDate.Format("2006-01-02"),
-		Records:      records,
-		Groups:       groups,
-		TotalRecords: len(records),
+		Records:       records,
+		Groups:        groups,
+		TotalRecords:  len(records),
 	}
 
 	outputPath, err := filepath.Abs(outputFile)
@@ -375,15 +379,15 @@ func ConvertScheduleGrid(inputFile, outputFile, weekStartDate string) error {
 func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, weekStartDate string) error {
 	// Загружаем сетку расписания
 	type gridRoot struct {
-		WeekStartDate string                `json:"weekStartDate"`
-		Records       []ScheduleGridRecord   `json:"records"`
+		WeekStartDate string               `json:"weekStartDate"`
+		Records       []ScheduleGridRecord `json:"records"`
 	}
-	
+
 	gridData, err := os.ReadFile(gridFile)
 	if err != nil {
 		return fmt.Errorf("ошибка чтения файла сетки: %v", err)
 	}
-	
+
 	var grid ScheduleGridOutput
 	if err := json.Unmarshal(gridData, &grid); err != nil {
 		return fmt.Errorf("ошибка парсинга JSON сетки: %v", err)
@@ -401,12 +405,12 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 			} `json:"groups"`
 		} `json:"departments"`
 	}
-	
+
 	studentsData, err := os.ReadFile(studentsFile)
 	if err != nil {
 		return fmt.Errorf("ошибка чтения файла студентов: %v", err)
 	}
-	
+
 	var students studentsRoot
 	if err := json.Unmarshal(studentsData, &students); err != nil {
 		return fmt.Errorf("ошибка парсинга JSON студентов: %v", err)
@@ -469,7 +473,7 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 
 	// Преобразуем сетку в формат lessons
 	groupsMap := make(map[string]*GroupLessons)
-	
+
 	for _, record := range grid.Records {
 		// Вычисляем дату занятия
 		offset, ok := dayOffset[record.DayOfWeek]
@@ -538,7 +542,7 @@ func ConvertScheduleGridToLessonsFormat(gridFile, studentsFile, outputFile, week
 					discipline = parsedDisc
 				}
 			}
-			
+
 			studentLessons.Records = append(studentLessons.Records, LessonRecord{
 				Date:         dateStr,
 				LessonNumber: record.LessonNumber,
@@ -606,11 +610,61 @@ func parseLessonNumber(s string) int {
 // Формат: "1. [Дисциплина] [Преподаватель] [Аудитория]"
 // или многострочный формат с переносами строк
 // или однострочный формат: "Дисциплина Фамилия И.О. Аудитория"
+// extractDateFromHeader извлекает дату из заголовка файла РасписаниеНаДату
+// Ищет в первых строках формат "DD.месяц.YYYY" (например, "05.марта.2026")
+func extractDateFromHeader(rows [][]string) time.Time {
+	// Маппинг русских месяцев
+	months := map[string]time.Month{
+		"января": time.January, "февраля": time.February, "марта": time.March,
+		"апреля": time.April, "мая": time.May, "июня": time.June,
+		"июля": time.July, "августа": time.August, "сентября": time.September,
+		"октября": time.October, "ноября": time.November, "декабря": time.December,
+	}
+
+	// Regex для "DD.месяц.YYYY" или "DD месяца YYYY"
+	dateRe := regexp.MustCompile(`(\d{1,2})[.\s](января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)[.\s](\d{4})`)
+
+	limit := 6
+	if len(rows) < limit {
+		limit = len(rows)
+	}
+	for i := 0; i < limit; i++ {
+		for _, cell := range rows[i] {
+			matches := dateRe.FindStringSubmatch(strings.ToLower(cell))
+			if len(matches) == 4 {
+				day := matches[1]
+				month, ok := months[matches[2]]
+				if !ok {
+					continue
+				}
+				year := matches[3]
+				parsed, err := time.Parse("2006-1-2", fmt.Sprintf("%s-%d-%s", year, month, day))
+				if err == nil {
+					// Вычисляем понедельник этой недели
+					weekday := int(parsed.Weekday())
+					if weekday == 0 {
+						weekday = 7
+					}
+					monday := parsed.AddDate(0, 0, -weekday+1)
+					fmt.Printf("[ScheduleGrid] Извлечена дата из заголовка: %s, понедельник недели: %s\n",
+						parsed.Format("02.01.2006"), monday.Format("02.01.2006"))
+					return monday
+				}
+			}
+		}
+	}
+	return time.Time{}
+}
+
 func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 	cellValue = strings.TrimSpace(cellValue)
 	if cellValue == "" {
 		return "", "", ""
 	}
+
+	// Убираем префикс "Нижняя неделя:" / "Верхняя неделя:" (формат РасписаниеНаДату.xls)
+	weekPrefixRe := regexp.MustCompile(`(?i)^(нижняя|верхняя)\s+неделя:\s*`)
+	cellValue = weekPrefixRe.ReplaceAllString(cellValue, "")
 
 	// Убираем номер в начале (если есть "1. ", "2. " и т.д.)
 	re := regexp.MustCompile(`^\d+\.\s*`)
@@ -620,7 +674,7 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 	cellValue = strings.ReplaceAll(cellValue, "\r\n", "\n")
 	cellValue = strings.ReplaceAll(cellValue, "\r", "\n")
 	lines := strings.Split(cellValue, "\n")
-	
+
 	// Фильтруем пустые строки
 	nonEmptyLines := []string{}
 	for _, line := range lines {
@@ -638,20 +692,20 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 	if len(nonEmptyLines) > 1 {
 		// Первая строка обычно дисциплина
 		discipline = nonEmptyLines[0]
-		
+
 		// Ищем преподавателя (обычно строка с инициалами типа "Иванов И.И." или "Иванов И. И.")
 		teacherPattern := regexp.MustCompile(`^[А-ЯЁ][а-яё]+\s+[А-ЯЁ]\.\s*[А-ЯЁ]\.?$`)
 		locationPattern := regexp.MustCompile(`(Аудитория|корпус|Спортивный зал)`)
-		
+
 		for i := 1; i < len(nonEmptyLines); i++ {
 			line := nonEmptyLines[i]
-			
+
 			// Проверяем, является ли строка преподавателем
 			if teacherPattern.MatchString(line) && teacher == "" {
 				teacher = line
 				continue
 			}
-			
+
 			// Проверяем, является ли строка аудиторией
 			if locationPattern.MatchString(line) || strings.Contains(line, "Аудитория") || strings.Contains(line, "корпус") {
 				if location == "" {
@@ -661,7 +715,7 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 				}
 				continue
 			}
-			
+
 			// Если это не преподаватель и не аудитория, возможно это продолжение дисциплины
 			if teacher == "" && location == "" {
 				discipline += " " + line
@@ -673,11 +727,11 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 	// Однострочный формат - парсим как одну строку
 	// Паттерн: "Дисциплина Фамилия И.О. Аудитория" или "Дисциплина Фамилия И.О. -"
 	// Преподаватель обычно имеет формат: "Фамилия И.О." где И.О. - инициалы с точками
-	
+
 	// Паттерн для поиска преподавателя: Фамилия (заглавная буква + строчные) + пробел + И.О. (заглавная.заглавная. или заглавная. заглавная.)
 	// Примеры: "Бурак А.Н.", "Трушина И.Ю.", "Пономаренко Н.В."
 	teacherPattern := regexp.MustCompile(`\b([А-ЯЁ][а-яё]+)\s+([А-ЯЁ]\.\s*[А-ЯЁ]\.?)\b`)
-	
+
 	// Ищем все совпадения паттерна преподавателя
 	matches := teacherPattern.FindAllStringSubmatch(cellValue, -1)
 	if len(matches) > 0 {
@@ -685,23 +739,23 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 		match := matches[len(matches)-1]
 		teacherFull := match[0] // Полное совпадение: "Фамилия И.О."
 		teacher = teacherFull
-		
+
 		// Находим позицию преподавателя в строке
 		teacherIdx := strings.LastIndex(cellValue, teacherFull)
 		if teacherIdx >= 0 {
 			// Дисциплина - всё до преподавателя
 			discipline = strings.TrimSpace(cellValue[:teacherIdx])
-			
+
 			// Остаток после преподавателя - аудитория
 			remainder := strings.TrimSpace(cellValue[teacherIdx+len(teacherFull):])
-			
+
 			// Обрабатываем остаток
 			if remainder != "" && remainder != "-" {
 				// Убираем лишние пробелы и разделяем по словам
 				remainderParts := strings.Fields(remainder)
 				// Проверяем, начинается ли с ключевых слов аудитории
-				if strings.Contains(remainder, "Аудитория") || strings.Contains(remainder, "корпус") || 
-				   strings.Contains(remainder, "Спортивный зал") || strings.Contains(remainder, "Актовый зал") {
+				if strings.Contains(remainder, "Аудитория") || strings.Contains(remainder, "корпус") ||
+					strings.Contains(remainder, "Спортивный зал") || strings.Contains(remainder, "Актовый зал") {
 					location = remainder
 				} else if len(remainderParts) > 0 {
 					// Если остаток не похож на аудиторию, возможно это часть дисциплины
@@ -732,7 +786,7 @@ func parseLessonCell(cellValue string) (discipline, teacher, location string) {
 				}
 			}
 		}
-		
+
 		// Если всё ещё не нашли, вся строка - дисциплина
 		if discipline == "" && teacher == "" {
 			discipline = cellValue

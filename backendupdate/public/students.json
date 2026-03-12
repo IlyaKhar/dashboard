@@ -2,3118 +2,6 @@
   "totalStudents": 1932,
   "departments": [
     {
-      "department": "Отделение информационных технологий и беспилотников",
-      "groups": [
-        {
-          "group": "1бп1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Абишев Богдан Базарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бижанов Артём Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Веркашанцев Роман Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Воронова Виктория Васильевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Гарбузов Максим Вадимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Дик Роман Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Емельянов Константин Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Иванова Полина Викторовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Исаева Ангелина Евгеньевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Исаналиев Ислам Азаматович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Казаков Александр Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Корчак Иван Антонович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кучин Юрий Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лямкин Федор Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Мельниченко Егор Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Михайлова Ярослава Евгеньевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Поршина Анастасия Дмитриевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Пряхин Кирилл Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Пряхин Ярослав Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Рассказов Денис Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Рыбаков Даниил Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Саджаия Марк Джумберович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Сайфутдинов Даниэль Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Удовиченко Алексей Антонович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Усачева Софья Владиславовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Филипчак Максим Максимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Чесноков Тимофей Павлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Яруллин Руслан Ринатович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1ис1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Байда Богдан Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Барышников Олег Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бунковский Степан Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Гаджиева Анастасия Дмитриевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Гарафутдинова Полина Романовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Давлетшина Диана Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Дрыганова Анастасия Владимировна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Епанешникова Алёна Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Ермагамбетов Данияр Нариманович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Жумугалеева Зарина Кайратовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Зайцев Виталий Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Ибрагимова Регина Руслановна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Исаев Нихат Исмиханович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Ишмухаметова Диана Айдарбековна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Каримов Доминик Замирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Корнилов Иван Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Латышев Максим Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Меркулова Арина Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Мокроусова Ксения Петровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Мотуз Артём Вадимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Нишанова Раяна Исламидиновна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Овчинников Денис Вадимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Решилова Анастасия Павловна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Рыбакин Анатолий Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Селиверстов Денис Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Тимофеева Дарья Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Фильзик Артём Антонович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1ис2",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Абдрашитов Тимур Ильдарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бакиев Ермек Бекбулатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Батаев Вадим Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Башкатов Данил Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Давлетшин Тимур Ильдарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Добролюбова Екатерина Максимовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Дробовский Максим Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Ефременко Алина Павловна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Кан Александр Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Климонова Вероника Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Конев Захар Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Кудряшов Григорий Ильич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Курлаев Никита Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Маликов Михаил Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Мигунова Валерия Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Мулькаманов Артур Рустамович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Почапский Андрей Васильевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Пырлитеску Екатерина Юрьевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Саблин Артём Михайлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Скорикова Мария Владимировна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Тяпаев Артём Вадимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Улесов Евгений Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Фролов Роман Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Халилова Ильвина Рустамовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Шамбазов Тимур Рамилевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Шарков Евгений Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Шаяхметова Азалия Альбертовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Шкирин Дмитрий Иванович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1ис3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Александрова Дарья Юрьевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Аманьчеев Саид Санатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бисенгалиев Ахмет Асланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Гадельшина Аделина Вадимовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Газискулов Александр Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Градоблянский Алексей Антонович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Ибраимов Даниил Рустемович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Измаилов Марк Айратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Ильясова Елизавета Ильинична",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Каравайцев Иван Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Карасев Владислав Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Ковалевский Роман Валерьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Маврина Александра Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Мальков Андрей Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Мартынов Иван Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Набиуллин Богдан Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Никулин Богдан",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Ниясова Диана Викторовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Носов Руслан Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Олимжонов Хасанбой Оятилло Угли",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Олимжонов Хусанбой Оятилло Угли",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Павлычев Иван Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Стручкова Ксения Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Торопчин Кирилл Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Феоктистов Иван Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Фехретдинов Тимур Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Худяшов Артём Станиславович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1са1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Алехина Ирина Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Андронов Кирилл Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Андрусевич Милена Игоревна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Аршанов Дамир Наилевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Баландин Алексей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Безымянный Данил Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Дворянцев Тимофей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Дейнега Алёна Игоревна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Джумабеков Ильнар Закиржанович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Калиновский Егор Станиславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Коржубаев Максат Саматович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Кушнер Максим Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Локтев Виктор Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лютенко Валерия Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Мазунин Владимир Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Нурахмедов Руслан Ильгарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Попов Владислав Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Ракунов Артём Васильевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Рокотов Даниил Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Саввина Анастасия Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Сагинбаев Адис Саламатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Сиволапов Артём Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Синицын Сергей Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Скопинцев Кирилл Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Фоменко Виктория Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Фомина Софья Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Чумаков Виктор Валерьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Шуваева Александра Николаевна",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1са2",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Акашева Ольга Игоревна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Алимбеков Артур Марисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бердинских Александра Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Биктеев Ратмир Рамазанович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Гах Артём Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Евдокимов Кирилл Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Жанузаков Тимур Кенжебекович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Иванов Алексей Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Казиев Саян Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Козин Егор Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Костевич Кирилл Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Кубеков Артём Рифович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Купцов Тимофей Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лукина Дарья Вячеславовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Лутков Артём Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Лямина Дарья Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Мукменкулов Амин Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Неретин Егор Павлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Поздняков Вадим Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Решетников Андрей Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Садомский Дмитрий Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Тертичный Матвей Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Федорчук Богдан Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Чугуров Григорий Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Шнайдер Егор Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Ячевская Виктория Алексеевна",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "1са3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Абуталыпов Радмир Галимьянович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Агамалиев Рамил Шаведдинович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Баймбетов Мирлан Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Буряков Матвей Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Докучаев Никита Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Иванов Дмитрий Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Ильдаканов Тимур Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Кидрячева Рената Маратовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Лисогоров Тимофей Антонович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Малахова Полина Владимировна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Медведев Кирилл Геннадьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Никулин Иван Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Объедков Никита Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Пегова Мария Михайловна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Пилипив Семён Павлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Погребнов Егор Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Подковыров Ярослав Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Райманов Тимур Марселевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Саржан Артемий Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Серединов Матвей Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Суслов Александр Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Суханов Богдан Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Усков Игорь Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Федоров Денис Павлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Чайкина Анастасия Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Чистоходов Артём Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Шантавы Мирослав Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Шмаков Кирилл Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 29,
-              "numberInGroup": 29,
-              "fullName": "Шорников Кирилл Константинович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "2бп3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Айткулов Артем Артурович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Альмухаметов Данила Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Андреев Артём Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Анпилогов Даниил Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Большаков Ярослав Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Бондаренко Кирилл Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Гомонов Никита Михайлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Денисов Григорий Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Киселев Андрей Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Прохоров Владислав Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Рожков Иван Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Ряховский Арсений Антонович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Селищев Даниил Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Стариков Тимофей Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Сухов Илья Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Сухомлинов Никита Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Титов Семён Максимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Тулинцев Илья Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Усманов Ильдар Рустамович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Ходарев Максим Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Шлепов Дмитрий Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Щенев Евгений Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Юдин Глеб Владимирович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "2ис1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Баканач Денис Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Белоусов Кирилл Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Васильева Виктория Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Емельянова Юлия Витальевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Ерофеев Кирилл Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Есеналин Арстан Айдарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Злобин Руслан Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Золотых Мария Владимировна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Исмагилов Айдар Наилевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Казтуганова Диана Сериковна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Козлова Виктория Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Кононенко Полина Константиновна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кудякина Полина Михайловна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Леухин Матвей Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Михалева Елизавета Максимовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Ольхова Ирина Витальевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Петрова Мария Евгеньевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Полукаров Иван Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Полякова Ксения Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Прохоров Иван Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Столповских Дмитрий Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Сыроватко Матвей Владиславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Уксукбаев Арсен Серикович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Усманов Никита Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Филина Злата Михайловна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Шаровский Андрей Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Юдина Полина Валерьевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Ярмухаметов Артур Ринатович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "2ис3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Аманьчеев Ислам Санатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Андреева Елизавета Максимовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бабин Егор Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Бакаева Александра Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Валиулов Тимур Наилевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Володин Максим Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Давлетов Максим Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Дайнеко Ярослав Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Денисов Артём Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Князев Андрей Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Курбанов Руслан Маратович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Мамалюк Гордей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Мухортов Вячеслав Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Никитин Никита Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Никитина Вероника Анатольевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Романуша Дмитрий Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Сайтбурханов Вадим Расимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Симонова Ксения Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Сударев Вадим Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Худяков Артём Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Черкасов Владислав Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Шумилин Максим Викторович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "2са1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Акимов Роман Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Анохин Алексий Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Аралбаев Ахмет Айнурович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Байда Алексей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Гнутова Анастасия Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Дерипаско Алексей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Завершинский Виктор Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Казакова Светлана Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Кильметьев Руслан Артурович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Конюша Максим Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Кораблев Андрей Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Кориков Роман Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Крищюнас Роман Антанович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лобанова Анна Игоревна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Матвеев Максим Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Порожняк Александра Витальевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Раицкий Данил Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Римская Яна Антоновна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Саблин Иван Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Смольянинов Максим Леонидович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Сопов Виктор Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Степанов Владислав Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Ходырева Ксения Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Шарафутдинов Богдан Дамирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Шудобаева Камилла Гумаровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Яковлев Денис Николаевич",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "2са3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Артамонов Роман Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Архипов Даниил Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Афанасьев Иван Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Бочков Данила Никитович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Воропаев Артём Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Горюшкин Владислав Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Граф Андрей Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Долженко Кирилл Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Ежов Максим Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Иванов Влас Леонидович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Лебедев Иван Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Малкин Михаил Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Михеев Сергей Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Недвигин Илья Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Сидорков Никита Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Сидоров Никита Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Хусаенов Тимур Ринатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Хусаинов Радик Вадикович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Шаталова Виктория Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Шмаков Егор Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Шустанов Дмитрий Иванович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "3ис1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Аитов Артём Радикович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бакуменко Алина Анатольевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Баранов Егор Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Богданов Богдан Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Ветчинкин Севастьян Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Давлятов Ильдар Расулович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Дикарев Андрей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Дурасов Кирилл Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Иванов Александр Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Иванов Никита Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Карпов Алексей Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Киреев Александр Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Лимонов Кирилл Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Мазина Алёна Денисовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Мирошниченко Николай Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Попова Анастасия Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Рауткин Дмитрий Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Ряжнов Илья Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Свириденко Кирилл Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Смолей Владимир Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Соколов Данила Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Стрекалова Анастасия Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Тавтелева Алана Руслановна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Усачева Карина Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Фатнев Николай Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Филиппова Виктория Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Чулошников Евгений Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Ядгарова Алина Ильнуровна",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "3ис3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Баскаков Михаил Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бастрыкин Илья Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бикбаев Данила Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Ворсин Иван Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Грякало Семен Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Дайнеко Артемий Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Добросельский Максим Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Жабин Александр Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Каверин Матвей Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Касикенов Мурат Тимурович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Колотов Кирилл Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Котов Гордей Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кулябов Марк Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лукин Фаддей Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Миронов Александр Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Паньков Вячеслав Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Пожитнев Владимир Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Правдин Артём Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Харин Александр Михайлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Хвостов Александр Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Якубовский Александр Сергеевич",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "3са1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Ампилогов Дмитрий Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Антоневич Иван Васильевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Ахматханов Альберт Данилович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Беляев Николай Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Вернер Ирина Димитриосовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Галямов Ержан Нурланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Демчук Алексей Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Дымченко Антон Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Кенжебаев Руслан Нурланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Ким Евгений Висаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Кодэлльо Валерий Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Корякин Никита Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кузубова Ольга Вячеславовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Лапшина Алёна Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Люлин Никита Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Маркабаева Диана Амангельдыевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Матвеев Роман Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Михеев Даниил Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Овсянникова Елена Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Попов Матвей Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Попова Александра Юрьевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Собакарь Илья Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Старцев Виктор Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Столповских Матвей Анатольевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Турукин Егор Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Усков Елисей Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Хисамутдинов Эльдар Филюсович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 28,
-              "numberInGroup": 28,
-              "fullName": "Чибряков Иван Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 29,
-              "numberInGroup": 29,
-              "fullName": "Шарипов Артур Ринатович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 30,
-              "numberInGroup": 30,
-              "fullName": "Юманов Кирилл Алексеевич",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "3са3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Бондаренко Данил Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бостан Евгений Константинович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Буркина Дарья Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Голенковская Софья Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Голивец Игорь Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Клёсов Станислав Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Литвиненко Алексей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Назмутдинов Рифат Артурович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Неверов Ярослав Алексеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Прокопьев Кирилл Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Слепнев Артем Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Тёмкин Никита Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Тещин Иван Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Трусов Иван Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Шалагин Илья Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Яруллин Матвей Андреевич",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "4ис1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Белкин Роман Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Бирюкова София Олеговна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Вафина Арина Романовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Воробьева Александра Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Глухов Никита Максимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Исаев Азамат Сандыбаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Калугина Кристина Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Куманёва Дарья Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Марков Борис Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Михайлов Сергей Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Панов Евгений Максимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Попов Вадим Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Попова Надежда Валерьевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Разяпов Леонид Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Рахимжанов Эльмир Динарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Сарбаева Азалия Зинуровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Сарычев Дмитрий Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Селиверстов Антон Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Сурков Егор Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Трокунов Антон Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Федосов Алексей Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Харламова Анастасия Дмитриевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Хлоповских Егор Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Цинаев Егор Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Черемисин Степан Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 26,
-              "numberInGroup": 26,
-              "fullName": "Шатилов Иван Ильич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 27,
-              "numberInGroup": 27,
-              "fullName": "Шерстобитова Арина Дмитриевна",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "4ис3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Агарков Данила Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Алеев Сергей Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бойков Егор Максимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Бочков Дмитрий Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Буев Тимофей Юрьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Бутко Никита Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Глазев Константин Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Глебова Татьяна Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Горских Алексей Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Зуев Дмитрий Артемович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Калинин Андрей Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Каримулин Валей Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кириченко Виктория Денисовна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Кислов Иван Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Кожанов Иван Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Краснобородкин Кирилл Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Курочкин Даниил Денисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Лукьянов Владимир Васильевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Малюгин Вячеслав Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Мозалов Сергей Павлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Туякбаев Рафаил Наилевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Шляпников Павел Данилович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "4са1",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Андакулов Алимхан Юлианович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Асяев Радик Морисович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Баширов Глеб Радикович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Боровина Анастасия Андреевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Бородин Иван Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Высоцкий Глеб Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Головченко Данила Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Горбунов Алексей Евгеньевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Дадобоев Даниил Забехуллоевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Деревянко Кирилл Романович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Исмаилова Руслана Руслановна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Ковальчук Никита Валерьевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кругликова Анастасия Алексеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Липунов Дмитрий Иванович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Матросов Дмитрий Владимирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Набокина Яна Александровна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Портной Никита Викторович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Рублев Илья Игоревич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Сайфулин Альберт Тагирович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 20,
-              "numberInGroup": 20,
-              "fullName": "Самуд Эмин Хамидуллаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 21,
-              "numberInGroup": 21,
-              "fullName": "Свириденко Дмитрий Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 22,
-              "numberInGroup": 22,
-              "fullName": "Стеновский Андрей Михайлович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 23,
-              "numberInGroup": 23,
-              "fullName": "Федорова Арина Сергеевна",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 24,
-              "numberInGroup": 24,
-              "fullName": "Хайрулин Роман Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 25,
-              "numberInGroup": 25,
-              "fullName": "Цаюков Артем Александрович",
-              "status": "Студент"
-            }
-          ]
-        },
-        {
-          "group": "4са3",
-          "students": [
-            {
-              "serialNumber": 1,
-              "numberInGroup": 1,
-              "fullName": "Азаринов Юрий Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 2,
-              "numberInGroup": 2,
-              "fullName": "Алиханов Джалил Захид оглы",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 3,
-              "numberInGroup": 3,
-              "fullName": "Бахаров Артём Витальевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 4,
-              "numberInGroup": 4,
-              "fullName": "Блинов Данил Дмитриевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 5,
-              "numberInGroup": 5,
-              "fullName": "Бурганов Роман Русланович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 6,
-              "numberInGroup": 6,
-              "fullName": "Бутов Дмитрий Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 7,
-              "numberInGroup": 7,
-              "fullName": "Гумаров Карим Ильдарович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 8,
-              "numberInGroup": 8,
-              "fullName": "Иванов Максим Эдуардович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 9,
-              "numberInGroup": 9,
-              "fullName": "Какулия Амиран Могелиевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 10,
-              "numberInGroup": 10,
-              "fullName": "Кашкимбаев Нуржигит Бакитбекович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 11,
-              "numberInGroup": 11,
-              "fullName": "Конищев Ян Сергеевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 12,
-              "numberInGroup": 12,
-              "fullName": "Крюков Илья Николаевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 13,
-              "numberInGroup": 13,
-              "fullName": "Кузьмин Дмитрий Вячеславович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 14,
-              "numberInGroup": 14,
-              "fullName": "Муллахметов Максим Вадимович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 15,
-              "numberInGroup": 15,
-              "fullName": "Никифоров Антон Андреевич",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 16,
-              "numberInGroup": 16,
-              "fullName": "Проненко Антон Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 17,
-              "numberInGroup": 17,
-              "fullName": "Терентьев Андрей Александрович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 18,
-              "numberInGroup": 18,
-              "fullName": "Ткаченко Владимир Олегович",
-              "status": "Студент"
-            },
-            {
-              "serialNumber": 19,
-              "numberInGroup": 19,
-              "fullName": "Харитонов Егор Владимирович",
-              "status": "Студент"
-            }
-          ]
-        }
-      ],
-      "totalStudents": 501
-    },
-    {
       "department": "Отделение креативных индустрий",
       "groups": [
         {
@@ -11991,6 +8879,3118 @@
         }
       ],
       "totalStudents": 325
+    },
+    {
+      "department": "Отделение информационных технологий и беспилотников",
+      "groups": [
+        {
+          "group": "1бп1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Абишев Богдан Базарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бижанов Артём Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Веркашанцев Роман Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Воронова Виктория Васильевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Гарбузов Максим Вадимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Дик Роман Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Емельянов Константин Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Иванова Полина Викторовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Исаева Ангелина Евгеньевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Исаналиев Ислам Азаматович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Казаков Александр Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Корчак Иван Антонович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кучин Юрий Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лямкин Федор Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Мельниченко Егор Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Михайлова Ярослава Евгеньевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Поршина Анастасия Дмитриевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Пряхин Кирилл Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Пряхин Ярослав Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Рассказов Денис Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Рыбаков Даниил Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Саджаия Марк Джумберович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Сайфутдинов Даниэль Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Удовиченко Алексей Антонович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Усачева Софья Владиславовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Филипчак Максим Максимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Чесноков Тимофей Павлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Яруллин Руслан Ринатович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1ис1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Байда Богдан Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Барышников Олег Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бунковский Степан Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Гаджиева Анастасия Дмитриевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Гарафутдинова Полина Романовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Давлетшина Диана Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Дрыганова Анастасия Владимировна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Епанешникова Алёна Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Ермагамбетов Данияр Нариманович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Жумугалеева Зарина Кайратовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Зайцев Виталий Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Ибрагимова Регина Руслановна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Исаев Нихат Исмиханович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Ишмухаметова Диана Айдарбековна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Каримов Доминик Замирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Корнилов Иван Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Латышев Максим Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Меркулова Арина Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Мокроусова Ксения Петровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Мотуз Артём Вадимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Нишанова Раяна Исламидиновна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Овчинников Денис Вадимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Решилова Анастасия Павловна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Рыбакин Анатолий Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Селиверстов Денис Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Тимофеева Дарья Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Фильзик Артём Антонович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1ис2",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Абдрашитов Тимур Ильдарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бакиев Ермек Бекбулатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Батаев Вадим Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Башкатов Данил Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Давлетшин Тимур Ильдарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Добролюбова Екатерина Максимовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Дробовский Максим Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Ефременко Алина Павловна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Кан Александр Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Климонова Вероника Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Конев Захар Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Кудряшов Григорий Ильич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Курлаев Никита Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Маликов Михаил Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Мигунова Валерия Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Мулькаманов Артур Рустамович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Почапский Андрей Васильевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Пырлитеску Екатерина Юрьевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Саблин Артём Михайлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Скорикова Мария Владимировна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Тяпаев Артём Вадимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Улесов Евгений Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Фролов Роман Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Халилова Ильвина Рустамовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Шамбазов Тимур Рамилевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Шарков Евгений Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Шаяхметова Азалия Альбертовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Шкирин Дмитрий Иванович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1ис3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Александрова Дарья Юрьевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Аманьчеев Саид Санатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бисенгалиев Ахмет Асланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Гадельшина Аделина Вадимовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Газискулов Александр Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Градоблянский Алексей Антонович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Ибраимов Даниил Рустемович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Измаилов Марк Айратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Ильясова Елизавета Ильинична",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Каравайцев Иван Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Карасев Владислав Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Ковалевский Роман Валерьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Маврина Александра Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Мальков Андрей Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Мартынов Иван Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Набиуллин Богдан Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Никулин Богдан",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Ниясова Диана Викторовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Носов Руслан Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Олимжонов Хасанбой Оятилло Угли",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Олимжонов Хусанбой Оятилло Угли",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Павлычев Иван Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Стручкова Ксения Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Торопчин Кирилл Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Феоктистов Иван Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Фехретдинов Тимур Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Худяшов Артём Станиславович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1са1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Алехина Ирина Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Андронов Кирилл Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Андрусевич Милена Игоревна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Аршанов Дамир Наилевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Баландин Алексей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Безымянный Данил Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Дворянцев Тимофей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Дейнега Алёна Игоревна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Джумабеков Ильнар Закиржанович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Калиновский Егор Станиславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Коржубаев Максат Саматович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Кушнер Максим Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Локтев Виктор Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лютенко Валерия Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Мазунин Владимир Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Нурахмедов Руслан Ильгарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Попов Владислав Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Ракунов Артём Васильевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Рокотов Даниил Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Саввина Анастасия Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Сагинбаев Адис Саламатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Сиволапов Артём Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Синицын Сергей Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Скопинцев Кирилл Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Фоменко Виктория Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Фомина Софья Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Чумаков Виктор Валерьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Шуваева Александра Николаевна",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1са2",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Акашева Ольга Игоревна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Алимбеков Артур Марисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бердинских Александра Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Биктеев Ратмир Рамазанович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Гах Артём Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Евдокимов Кирилл Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Жанузаков Тимур Кенжебекович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Иванов Алексей Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Казиев Саян Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Козин Егор Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Костевич Кирилл Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Кубеков Артём Рифович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Купцов Тимофей Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лукина Дарья Вячеславовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Лутков Артём Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Лямина Дарья Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Мукменкулов Амин Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Неретин Егор Павлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Поздняков Вадим Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Решетников Андрей Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Садомский Дмитрий Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Тертичный Матвей Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Федорчук Богдан Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Чугуров Григорий Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Шнайдер Егор Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Ячевская Виктория Алексеевна",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "1са3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Абуталыпов Радмир Галимьянович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Агамалиев Рамил Шаведдинович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Баймбетов Мирлан Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Буряков Матвей Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Докучаев Никита Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Иванов Дмитрий Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Ильдаканов Тимур Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Кидрячева Рената Маратовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Лисогоров Тимофей Антонович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Малахова Полина Владимировна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Медведев Кирилл Геннадьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Никулин Иван Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Объедков Никита Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Пегова Мария Михайловна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Пилипив Семён Павлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Погребнов Егор Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Подковыров Ярослав Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Райманов Тимур Марселевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Саржан Артемий Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Серединов Матвей Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Суслов Александр Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Суханов Богдан Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Усков Игорь Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Федоров Денис Павлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Чайкина Анастасия Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Чистоходов Артём Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Шантавы Мирослав Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Шмаков Кирилл Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 29,
+              "numberInGroup": 29,
+              "fullName": "Шорников Кирилл Константинович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "2бп3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Айткулов Артем Артурович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Альмухаметов Данила Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Андреев Артём Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Анпилогов Даниил Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Большаков Ярослав Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Бондаренко Кирилл Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Гомонов Никита Михайлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Денисов Григорий Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Киселев Андрей Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Прохоров Владислав Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Рожков Иван Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Ряховский Арсений Антонович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Селищев Даниил Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Стариков Тимофей Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Сухов Илья Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Сухомлинов Никита Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Титов Семён Максимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Тулинцев Илья Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Усманов Ильдар Рустамович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Ходарев Максим Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Шлепов Дмитрий Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Щенев Евгений Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Юдин Глеб Владимирович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "2ис1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Баканач Денис Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Белоусов Кирилл Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Васильева Виктория Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Емельянова Юлия Витальевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Ерофеев Кирилл Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Есеналин Арстан Айдарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Злобин Руслан Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Золотых Мария Владимировна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Исмагилов Айдар Наилевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Казтуганова Диана Сериковна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Козлова Виктория Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Кононенко Полина Константиновна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кудякина Полина Михайловна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Леухин Матвей Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Михалева Елизавета Максимовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Ольхова Ирина Витальевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Петрова Мария Евгеньевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Полукаров Иван Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Полякова Ксения Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Прохоров Иван Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Столповских Дмитрий Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Сыроватко Матвей Владиславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Уксукбаев Арсен Серикович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Усманов Никита Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Филина Злата Михайловна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Шаровский Андрей Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Юдина Полина Валерьевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Ярмухаметов Артур Ринатович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "2ис3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Аманьчеев Ислам Санатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Андреева Елизавета Максимовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бабин Егор Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Бакаева Александра Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Валиулов Тимур Наилевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Володин Максим Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Давлетов Максим Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Дайнеко Ярослав Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Денисов Артём Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Князев Андрей Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Курбанов Руслан Маратович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Мамалюк Гордей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Мухортов Вячеслав Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Никитин Никита Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Никитина Вероника Анатольевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Романуша Дмитрий Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Сайтбурханов Вадим Расимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Симонова Ксения Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Сударев Вадим Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Худяков Артём Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Черкасов Владислав Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Шумилин Максим Викторович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "2са1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Акимов Роман Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Анохин Алексий Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Аралбаев Ахмет Айнурович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Байда Алексей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Гнутова Анастасия Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Дерипаско Алексей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Завершинский Виктор Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Казакова Светлана Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Кильметьев Руслан Артурович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Конюша Максим Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Кораблев Андрей Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Кориков Роман Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Крищюнас Роман Антанович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лобанова Анна Игоревна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Матвеев Максим Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Порожняк Александра Витальевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Раицкий Данил Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Римская Яна Антоновна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Саблин Иван Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Смольянинов Максим Леонидович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Сопов Виктор Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Степанов Владислав Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Ходырева Ксения Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Шарафутдинов Богдан Дамирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Шудобаева Камилла Гумаровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Яковлев Денис Николаевич",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "2са3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Артамонов Роман Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Архипов Даниил Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Афанасьев Иван Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Бочков Данила Никитович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Воропаев Артём Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Горюшкин Владислав Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Граф Андрей Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Долженко Кирилл Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Ежов Максим Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Иванов Влас Леонидович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Лебедев Иван Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Малкин Михаил Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Михеев Сергей Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Недвигин Илья Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Сидорков Никита Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Сидоров Никита Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Хусаенов Тимур Ринатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Хусаинов Радик Вадикович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Шаталова Виктория Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Шмаков Егор Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Шустанов Дмитрий Иванович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "3ис1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Аитов Артём Радикович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бакуменко Алина Анатольевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Баранов Егор Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Богданов Богдан Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Ветчинкин Севастьян Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Давлятов Ильдар Расулович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Дикарев Андрей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Дурасов Кирилл Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Иванов Александр Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Иванов Никита Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Карпов Алексей Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Киреев Александр Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Лимонов Кирилл Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Мазина Алёна Денисовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Мирошниченко Николай Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Попова Анастасия Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Рауткин Дмитрий Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Ряжнов Илья Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Свириденко Кирилл Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Смолей Владимир Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Соколов Данила Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Стрекалова Анастасия Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Тавтелева Алана Руслановна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Усачева Карина Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Фатнев Николай Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Филиппова Виктория Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Чулошников Евгений Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Ядгарова Алина Ильнуровна",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "3ис3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Баскаков Михаил Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бастрыкин Илья Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бикбаев Данила Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Ворсин Иван Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Грякало Семен Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Дайнеко Артемий Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Добросельский Максим Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Жабин Александр Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Каверин Матвей Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Касикенов Мурат Тимурович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Колотов Кирилл Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Котов Гордей Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кулябов Марк Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лукин Фаддей Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Миронов Александр Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Паньков Вячеслав Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Пожитнев Владимир Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Правдин Артём Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Харин Александр Михайлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Хвостов Александр Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Якубовский Александр Сергеевич",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "3са1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Ампилогов Дмитрий Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Антоневич Иван Васильевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Ахматханов Альберт Данилович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Беляев Николай Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Вернер Ирина Димитриосовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Галямов Ержан Нурланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Демчук Алексей Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Дымченко Антон Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Кенжебаев Руслан Нурланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Ким Евгений Висаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Кодэлльо Валерий Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Корякин Никита Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кузубова Ольга Вячеславовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Лапшина Алёна Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Люлин Никита Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Маркабаева Диана Амангельдыевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Матвеев Роман Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Михеев Даниил Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Овсянникова Елена Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Попов Матвей Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Попова Александра Юрьевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Собакарь Илья Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Старцев Виктор Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Столповских Матвей Анатольевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Турукин Егор Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Усков Елисей Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Хисамутдинов Эльдар Филюсович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 28,
+              "numberInGroup": 28,
+              "fullName": "Чибряков Иван Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 29,
+              "numberInGroup": 29,
+              "fullName": "Шарипов Артур Ринатович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 30,
+              "numberInGroup": 30,
+              "fullName": "Юманов Кирилл Алексеевич",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "3са3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Бондаренко Данил Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бостан Евгений Константинович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Буркина Дарья Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Голенковская Софья Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Голивец Игорь Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Клёсов Станислав Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Литвиненко Алексей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Назмутдинов Рифат Артурович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Неверов Ярослав Алексеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Прокопьев Кирилл Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Слепнев Артем Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Тёмкин Никита Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Тещин Иван Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Трусов Иван Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Шалагин Илья Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Яруллин Матвей Андреевич",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "4ис1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Белкин Роман Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Бирюкова София Олеговна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Вафина Арина Романовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Воробьева Александра Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Глухов Никита Максимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Исаев Азамат Сандыбаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Калугина Кристина Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Куманёва Дарья Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Марков Борис Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Михайлов Сергей Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Панов Евгений Максимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Попов Вадим Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Попова Надежда Валерьевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Разяпов Леонид Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Рахимжанов Эльмир Динарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Сарбаева Азалия Зинуровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Сарычев Дмитрий Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Селиверстов Антон Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Сурков Егор Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Трокунов Антон Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Федосов Алексей Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Харламова Анастасия Дмитриевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Хлоповских Егор Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Цинаев Егор Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Черемисин Степан Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 26,
+              "numberInGroup": 26,
+              "fullName": "Шатилов Иван Ильич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 27,
+              "numberInGroup": 27,
+              "fullName": "Шерстобитова Арина Дмитриевна",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "4ис3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Агарков Данила Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Алеев Сергей Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бойков Егор Максимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Бочков Дмитрий Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Буев Тимофей Юрьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Бутко Никита Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Глазев Константин Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Глебова Татьяна Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Горских Алексей Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Зуев Дмитрий Артемович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Калинин Андрей Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Каримулин Валей Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кириченко Виктория Денисовна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Кислов Иван Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Кожанов Иван Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Краснобородкин Кирилл Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Курочкин Даниил Денисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Лукьянов Владимир Васильевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Малюгин Вячеслав Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Мозалов Сергей Павлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Туякбаев Рафаил Наилевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Шляпников Павел Данилович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "4са1",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Андакулов Алимхан Юлианович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Асяев Радик Морисович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Баширов Глеб Радикович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Боровина Анастасия Андреевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Бородин Иван Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Высоцкий Глеб Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Головченко Данила Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Горбунов Алексей Евгеньевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Дадобоев Даниил Забехуллоевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Деревянко Кирилл Романович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Исмаилова Руслана Руслановна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Ковальчук Никита Валерьевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кругликова Анастасия Алексеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Липунов Дмитрий Иванович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Матросов Дмитрий Владимирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Набокина Яна Александровна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Портной Никита Викторович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Рублев Илья Игоревич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Сайфулин Альберт Тагирович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 20,
+              "numberInGroup": 20,
+              "fullName": "Самуд Эмин Хамидуллаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 21,
+              "numberInGroup": 21,
+              "fullName": "Свириденко Дмитрий Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 22,
+              "numberInGroup": 22,
+              "fullName": "Стеновский Андрей Михайлович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 23,
+              "numberInGroup": 23,
+              "fullName": "Федорова Арина Сергеевна",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 24,
+              "numberInGroup": 24,
+              "fullName": "Хайрулин Роман Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 25,
+              "numberInGroup": 25,
+              "fullName": "Цаюков Артем Александрович",
+              "status": "Студент"
+            }
+          ]
+        },
+        {
+          "group": "4са3",
+          "students": [
+            {
+              "serialNumber": 1,
+              "numberInGroup": 1,
+              "fullName": "Азаринов Юрий Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 2,
+              "numberInGroup": 2,
+              "fullName": "Алиханов Джалил Захид оглы",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 3,
+              "numberInGroup": 3,
+              "fullName": "Бахаров Артём Витальевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 4,
+              "numberInGroup": 4,
+              "fullName": "Блинов Данил Дмитриевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 5,
+              "numberInGroup": 5,
+              "fullName": "Бурганов Роман Русланович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 6,
+              "numberInGroup": 6,
+              "fullName": "Бутов Дмитрий Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 7,
+              "numberInGroup": 7,
+              "fullName": "Гумаров Карим Ильдарович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 8,
+              "numberInGroup": 8,
+              "fullName": "Иванов Максим Эдуардович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 9,
+              "numberInGroup": 9,
+              "fullName": "Какулия Амиран Могелиевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 10,
+              "numberInGroup": 10,
+              "fullName": "Кашкимбаев Нуржигит Бакитбекович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 11,
+              "numberInGroup": 11,
+              "fullName": "Конищев Ян Сергеевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 12,
+              "numberInGroup": 12,
+              "fullName": "Крюков Илья Николаевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 13,
+              "numberInGroup": 13,
+              "fullName": "Кузьмин Дмитрий Вячеславович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 14,
+              "numberInGroup": 14,
+              "fullName": "Муллахметов Максим Вадимович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 15,
+              "numberInGroup": 15,
+              "fullName": "Никифоров Антон Андреевич",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 16,
+              "numberInGroup": 16,
+              "fullName": "Проненко Антон Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 17,
+              "numberInGroup": 17,
+              "fullName": "Терентьев Андрей Александрович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 18,
+              "numberInGroup": 18,
+              "fullName": "Ткаченко Владимир Олегович",
+              "status": "Студент"
+            },
+            {
+              "serialNumber": 19,
+              "numberInGroup": 19,
+              "fullName": "Харитонов Егор Владимирович",
+              "status": "Студент"
+            }
+          ]
+        }
+      ],
+      "totalStudents": 501
     }
   ]
 }

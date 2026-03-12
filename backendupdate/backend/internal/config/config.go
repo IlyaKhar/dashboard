@@ -24,8 +24,8 @@ type Config struct {
 	StudentsOutput     string // public/students.json
 	LessonsInput       string // (не используется, расписание теперь строится из сетки/ОКЭИ)
 	LessonsOutput      string // public/schedule.json
-	ScheduleGridInput  string // расписание.xls - сетка расписания (новый формат)
-	ScheduleGridOutput string // public/schedule_grid.json
+	ScheduleGridInput  string // РасписаниеНаДату.xls — ежедневное расписание с шары
+	ScheduleGridOutput string // (не используется, оставлен для совместимости)
 	PythonScript       string
 
 	// Расписание с сайта ОКЭИ (timetable: группа → день → пара → дисциплина)
@@ -258,7 +258,7 @@ func Load() (*Config, error) {
 		if envPath := os.Getenv("LESSONS_INPUT"); filename == "Проба.xlsx" && envPath != "" {
 			return envPath
 		}
-		if envPath := os.Getenv("SCHEDULE_GRID_INPUT"); (filename == "расписание.xls" || filename == "Расписание.xls") && envPath != "" {
+		if envPath := os.Getenv("SCHEDULE_GRID_INPUT"); filename == "РасписаниеНаДату.xls" && envPath != "" {
 			return envPath
 		}
 
@@ -290,10 +290,37 @@ func Load() (*Config, error) {
 
 	statementInput := os.Getenv("STATEMENT_INPUT")
 	if statementInput == "" {
-		// Пробуем найти ведомость.xls или ведомость.xlsx
-		statementInput = findFile("ведомость.xls")
-		if _, err := os.Stat(statementInput); err != nil {
-			statementInput = findFile("ведомость.xlsx")
+		// Ищем оба варианта ведомости и выбираем наиболее новый файл (по времени изменения).
+		xlsPath := findFile("ведомость.xls")
+		xlsxPath := findFile("ведомость.xlsx")
+
+		var xlsInfo, xlsxInfo os.FileInfo
+		var xlsErr, xlsxErr error
+
+		if xlsPath != "" {
+			xlsInfo, xlsErr = os.Stat(xlsPath)
+		}
+		if xlsxPath != "" {
+			xlsxInfo, xlsxErr = os.Stat(xlsxPath)
+		}
+
+		switch {
+		case xlsErr == nil && xlsxErr == nil:
+			// Оба файла есть — берём тот, что новее.
+			if xlsxInfo.ModTime().After(xlsInfo.ModTime()) {
+				statementInput = xlsxPath
+			} else {
+				statementInput = xlsPath
+			}
+		case xlsErr == nil:
+			// Есть только .xls
+			statementInput = xlsPath
+		case xlsxErr == nil:
+			// Есть только .xlsx
+			statementInput = xlsxPath
+		default:
+			// Ничего не нашли — по умолчанию ведомость.xls в корне проекта.
+			statementInput = filepath.Join(projectRoot, "ведомость.xls")
 		}
 	}
 	statementOutput := os.Getenv("STATEMENT_OUTPUT")
@@ -330,11 +357,8 @@ func Load() (*Config, error) {
 
 	scheduleGridInput := os.Getenv("SCHEDULE_GRID_INPUT")
 	if scheduleGridInput == "" {
-		// Пробуем найти расписание.xls или Расписание.xls
-		scheduleGridInput = findFile("расписание.xls")
-		if _, err := os.Stat(scheduleGridInput); err != nil {
-			scheduleGridInput = findFile("Расписание.xls")
-		}
+		// РасписаниеНаДату.xls — ежедневное расписание с шары (обновляется каждый день)
+		scheduleGridInput = findFile("РасписаниеНаДату.xls")
 	}
 	scheduleGridOutput := os.Getenv("SCHEDULE_GRID_OUTPUT")
 	if scheduleGridOutput == "" {

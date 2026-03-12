@@ -46,8 +46,19 @@ func ConvertMaster(
 
 		// Пробуем найти уже существующий XLSX
 		inputFileXLSX = strings.TrimSuffix(inputFileXLS, ".xls") + ".xlsx"
-		if _, err := os.Stat(inputFileXLSX); os.IsNotExist(err) {
+		xlsInfo, xlsErr := os.Stat(inputFileXLS)
+		xlsxInfo, xlsxErr := os.Stat(inputFileXLSX)
+
+		needConvert := false
+		if os.IsNotExist(xlsxErr) {
 			// XLSX не существует, нужно конвертировать
+			needConvert = true
+		} else if xlsErr == nil && xlsxErr == nil && xlsInfo.ModTime().After(xlsxInfo.ModTime()) {
+			// XLS новее XLSX — пересобираем
+			needConvert = true
+		}
+
+		if needConvert {
 			log.Printf("[ConvertMaster] Конвертация XLS → XLSX: %s → %s", inputFileXLS, inputFileXLSX)
 			if err := convertXLSToXLSX(inputFileXLS, inputFileXLSX, pythonScriptPath); err != nil {
 				// Если конвертация не удалась, пробуем использовать XLS напрямую (не поддерживается excelize)
@@ -56,7 +67,7 @@ func ConvertMaster(
 			}
 			log.Printf("[ConvertMaster] Конвертация успешна: %s", inputFileXLSX)
 		} else {
-			log.Printf("[ConvertMaster] XLSX файл уже существует: %s", inputFileXLSX)
+			log.Printf("[ConvertMaster] Используем существующий XLSX (актуален): %s", inputFileXLSX)
 		}
 	}
 

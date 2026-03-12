@@ -69,7 +69,7 @@ export function DepartmentsPage() {
 
       for (let lessonIndex = 0; lessonIndex < 6; lessonIndex++) {
         const lessonData = lessonsData[lessonIndex];
-        const deptData = lessonData.byDepartment.find(
+        const deptData = lessonData?.byDepartment?.find(
           (d) => d.department === dept.department
         );
 
