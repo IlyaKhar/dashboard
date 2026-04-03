@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dashboard-backend
+    restart: unless-stopped
+    env_file:
+      - ../.env
+    ports:
+      - "8080:8080"
+    volumes:
+      # JSON и статика живут на хосте, а не внутри контейнера
+      - ./public:/app/public
+      # Шара 1С, смонтированная на хосте
+      - /mnt/proba:/mnt/proba:ro
+    environment:
+      # на всякий случай, если в .env нет
+      - ONEC_SOURCE_DIR=/mnt/proba
+      - SERVER_HOST=0.0.0.0
+      - SERVER_PORT=8080
