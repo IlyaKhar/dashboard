@@ -314,6 +314,12 @@ func extractAllData(rows [][]string) ExtractedData {
 			continue
 		}
 
+		// Отдельная строка с номером пары в колонке A (выгрузка 1С: "3.0", "2") — не группа.
+		if ln := parseVedomostLessonIndexCell(firstCell); ln > 0 {
+			currentLessonNumber = ln
+			continue
+		}
+
 		// Пытаемся определить, что это за строка
 		// Вариант 1: Строка контингента (есть № в группе и ФИО)
 		if numInGroup, fullName := parseStudentRow(row); numInGroup > 0 && fullName != "" {

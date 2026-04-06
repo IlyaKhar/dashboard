@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"regexp"
 	"strconv"
 	"strings"
 	"unicode"
@@ -523,6 +524,23 @@ func convertXLSToXLSXPython(xlsFile, xlsxFile, pythonScriptPath string) error {
 
 // Вспомогательные функции
 
+// vedomostLessonIndexRE — в сводной ведомости 1С номер пары часто в колонке A как "3" или "3.0".
+var vedomostLessonIndexRE = regexp.MustCompile(`^\s*([1-6])(?:\.0+)?\s*$`)
+
+// parseVedomostLessonIndexCell возвращает 1..6, если ячейка — только номер пары (не код группы).
+func parseVedomostLessonIndexCell(s string) int {
+	s = strings.TrimSpace(s)
+	m := vedomostLessonIndexRE.FindStringSubmatch(s)
+	if len(m) != 2 {
+		return 0
+	}
+	n, err := strconv.Atoi(m[1])
+	if err != nil || n < 1 || n > 6 {
+		return 0
+	}
+	return n
+}
+
 func parseIntCell(value string) int {
 	value = strings.TrimSpace(value)
 	if value == "" {
@@ -545,7 +563,8 @@ func isDepartment(text string) bool {
 
 func isHeaderOrTotal(text string) bool {
 	switch text {
-	case "Сводная ведомость по посещаемости", "Параметры:", "Отделение", "Специальность", "Учебная группа", "Студент", "Итого":
+	case "Сводная ведомость по посещаемости", "Параметры:", "Отделение", "Специальность", "Учебная группа",
+		"Номер пары", "Дисциплина", "Студент", "Итого":
 		return true
 	default:
 		return false
@@ -604,7 +623,16 @@ func isGroup(text string) bool {
 	if len(strings.Fields(text)) != 1 {
 		return false
 	}
-	return true
+	// Обязательна буква в коде: иначе "3.0"/"2" из Excel ошибочно считались группой.
+	hasLetter := false
+	for _, ch := range text {
+		if (ch >= 'а' && ch <= 'я') || (ch >= 'А' && ch <= 'Я') ||
+			(ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') {
+			hasLetter = true
+			break
+		}
+	}
+	return hasLetter
 }
 
 // isDiscipline определяет, является ли строка названием дисциплины
