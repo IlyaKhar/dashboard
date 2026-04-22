@@ -5,9 +5,10 @@ import { EmptyState } from "@/shared/ui/emptyState";
 import { ErrorState } from "@/shared/ui/errorState";
 import { PieDiagram } from "@/shared/ui/pieDiagram";
 import { useFetch } from "@/shared/hooks/useFetch";
-import { fetchDrillStudents } from "@/shared/api";
+import { fetchDrillStudents, fetchAttendanceReconcileDay } from "@/shared/api";
 import type { DeptDrillItem, GroupDrillItem } from "@/shared/api";
 import type { PieDiagramData } from "@/shared/ui/pieDiagram/types";
+import { getOperationalDate } from "@/shared/hooks/useOperationalDate";
 
 function getMissedHoursBadgeColor(missed: number): string {
   if (missed === 0) return "bg-[#16CF3E]";
@@ -20,7 +21,33 @@ interface AnalyticsLevelProps {
   group: GroupDrillItem;
 }
 
+const PAIR_TIME_RANGES: Array<{ start: number; end: number }> = [
+  { start: 8 * 60 + 30, end: 10 * 60 },
+  { start: 10 * 60 + 10, end: 11 * 60 + 40 },
+  { start: 12 * 60, end: 13 * 60 + 30 },
+  { start: 14 * 60, end: 15 * 60 + 30 },
+  { start: 15 * 60 + 40, end: 17 * 60 + 10 },
+  { start: 17 * 60 + 15, end: 18 * 60 + 45 },
+];
+
+function getCurrentPairNumber(now: Date = new Date()): number {
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  if (minutes < PAIR_TIME_RANGES[0]!.start) return 1;
+
+  for (let i = 0; i < PAIR_TIME_RANGES.length; i += 1) {
+    const { start, end } = PAIR_TIME_RANGES[i]!;
+    if (minutes >= start && minutes < end) return i + 1;
+    const next = PAIR_TIME_RANGES[i + 1];
+    if (next && minutes >= end && minutes < next.start) return i + 1;
+  }
+
+  return 6;
+}
+
 export function AnalyticsLevel({ department, group }: AnalyticsLevelProps) {
+  const operationalDate = getOperationalDate();
+  const currentPair = getCurrentPairNumber();
+
   const {
     data: students,
     isLoading,
@@ -32,12 +59,29 @@ export function AnalyticsLevel({ department, group }: AnalyticsLevelProps) {
     [department.department, group.group]
   );
 
+  const { data: reconcileLesson } = useFetch(
+    (signal) => fetchAttendanceReconcileDay(operationalDate, signal, currentPair),
+    [operationalDate, currentPair]
+  );
+
+  const currentLessonGroupStats = useMemo(() => {
+    const dept = reconcileLesson?.byDepartment?.find(
+      (d) => d.department === department.department
+    );
+    return dept?.byGroup?.find((g) => g.group === group.group) ?? null;
+  }, [reconcileLesson, department.department, group.group]);
+
   const pieData = useMemo<PieDiagramData[]>(
-    () => [
-      { name: "Присутствует", value: group.total - group.absent, color: "#22c55e" },
-      { name: "Отсутствует", value: group.absent, color: "#ef4444"},
-    ],
-    [group]
+    () => {
+      const present = currentLessonGroupStats?.present ?? (group.total - group.absent);
+      const absent = currentLessonGroupStats?.absent ?? group.absent;
+
+      return [
+        { name: "Присутствует", value: present, color: "#22c55e" },
+        { name: "Отсутствует", value: absent, color: "#ef4444" },
+      ];
+    },
+    [currentLessonGroupStats, group]
   );
 
   if (isLoading) return <Loader text="Загрузка аналитики..." />;
