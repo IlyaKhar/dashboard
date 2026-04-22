@@ -68,20 +68,8 @@ func (s *ReconciliationService) ReconcileDay(date string) (*ReconcileResult, err
 		return nil, err
 	}
 
-	// Если за эту дату в attendance/attendance_history нет ни одной записи,
-	// считаем, что данных по посещаемости нет вообще и не пытаемся строить
-	// сверку по расписанию — возвращаем пустой результат.
-	if len(flat) == 0 {
-		result := &ReconcileResult{
-			Date:         date,
-			TotalPlanned: 0,
-			TotalPresent: 0,
-			TotalAbsent:  0,
-			ByDepartment: nil,
-		}
-		s.cache.Set(date, result)
-		return result, nil
-	}
+	// В режиме дистанта/при пустой ведомости за дату в attendance может не быть строк вовсе.
+	// В этом кейсе всё равно строим "planned" по расписанию, а absentSet остаётся пустым.
 
 	planned, err := s.schedule.GetPlannedForDate(date)
 	if err != nil {
@@ -198,19 +186,8 @@ func (s *ReconciliationService) ReconcileDayLesson(date string, lessonNumber int
 		return nil, err
 	}
 
-	// Если по этой дате нет записей посещаемости, считаем, что данных нет,
-	// и возвращаем пустой результат для данной пары.
-	if len(flat) == 0 {
-		result := &ReconcileResult{
-			Date:         date,
-			TotalPlanned: 0,
-			TotalPresent: 0,
-			TotalAbsent:  0,
-			ByDepartment: nil,
-		}
-		s.cache.Set(cacheKey, result)
-		return result, nil
-	}
+	// Аналогично ReconcileDay: даже если посещаемость за дату пустая,
+	// planned по конкретной паре считаем из расписания.
 
 	planned, err := s.schedule.GetPlannedForDateAndLesson(date, lessonNumber)
 	if err != nil {
