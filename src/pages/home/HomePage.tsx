@@ -117,6 +117,16 @@ export function HomePage() {
         .fill(null)
         .map(() => ({ max: 0, total: Number.NaN }));
     }
+
+    const hasAnyPlanned = lessonsData.some((r) => (r.totalPlanned ?? 0) > 0);
+    if (!hasAnyPlanned) {
+      // Если на выбранную дату расписание не подтянулось (все пары 0/0),
+      // показываем согласованный fallback по summary, чтобы не было рассинхрона с карточками.
+      if (summary) {
+        return drillToAttendanceRows(summary.total_students, summary.absent);
+      }
+    }
+
     return lessonsData.map((r) => ({
       max: r.totalPlanned,
       total: r.totalPresent,
