@@ -373,7 +373,7 @@ func extractAllData(rows [][]string) ExtractedData {
 					// чтобы значения для пары 1 и пары 2 не были одинаковыми.
 					if len(lessonColumnByNumber) > 0 {
 						addedAny := false
-						for ln, colIdx := range lessonColumnByNumber {
+						for _, colIdx := range lessonColumnByNumber {
 							if colIdx < 0 || colIdx >= len(row) {
 								continue
 							}
@@ -389,7 +389,9 @@ func extractAllData(rows [][]string) ExtractedData {
 								Student:      studentName,
 								Date:         date,
 								Missed:       missed,
-								LessonNumber: ln,
+							// Номер пары в текущей ведомости считаем ненадёжным:
+							// не распределяем пропуски по парам, оставляем 0.
+							LessonNumber: 0,
 								Discipline:   currentAttendanceDiscipline,
 							})
 						}
@@ -402,20 +404,19 @@ func extractAllData(rows [][]string) ExtractedData {
 					// Fallback: старое поведение (одно число на строку) — чтобы не потерять данные
 					// в форматах ведомости, где шапка с колонками пар не распознаётся.
 					if _, missed, lessonNumber := parseAttendanceRow(row, attendanceDefaultDate); missed > 0 {
-						if lessonNumber == 0 && currentLessonNumber > 0 {
-							lessonNumber = currentLessonNumber
-						}
-						if lessonNumber > 0 {
-							data.AttendanceRecords = append(data.AttendanceRecords, attendanceRecordItem{
-								Department:   currentDepartment,
-								Group:        currentGroup,
-								Student:      studentName,
-								Date:         date,
-								Missed:       missed,
-								LessonNumber: lessonNumber,
-								Discipline:   currentAttendanceDiscipline,
-							})
-						}
+						_ = lessonNumber
+						_ = currentLessonNumber
+						data.AttendanceRecords = append(data.AttendanceRecords, attendanceRecordItem{
+							Department:   currentDepartment,
+							Group:        currentGroup,
+							Student:      studentName,
+							Date:         date,
+							Missed:       missed,
+							// Номер пары в текущей ведомости считаем ненадёжным:
+							// не распределяем пропуски по парам, оставляем 0.
+							LessonNumber: 0,
+							Discipline:   currentAttendanceDiscipline,
+						})
 					}
 				}
 			}
