@@ -299,17 +299,22 @@ func extractAllData(rows [][]string) ExtractedData {
 			currentDepartment = firstCell
 			currentSpecialty = ""
 			currentGroup = ""
+			currentLessonNumber = 0
+			currentAttendanceDiscipline = ""
 			continue
 		}
 
 		if isSpecialty(firstCell) {
 			currentSpecialty = firstCell
 			currentGroup = ""
+			currentLessonNumber = 0
+			currentAttendanceDiscipline = ""
 			continue
 		}
 
 		if isGroup(firstCell) {
 			currentGroup = strings.ToLower(firstCell)
+			currentLessonNumber = 0
 			currentAttendanceDiscipline = ""
 			continue
 		}
