@@ -311,15 +311,15 @@ func parseDailyXLS(inputFile, pythonScript string) ([]dailyRecord, string, strin
 		if limit > len(rows) {
 			limit = len(rows)
 		}
+		// В верхних строках могут встречаться служебные даты (например, дата согласования).
+		// Берём максимальную найденную дату, чтобы не застревать на "вчера", если в файле есть более свежая.
 		for i := 0; i < limit; i++ {
 			for _, cell := range rows[i] {
 				if iso := parseDateValue(cell); iso != "" {
-					baseISO = iso
-					break
+					if baseISO == "" || iso > baseISO {
+						baseISO = iso
+					}
 				}
-			}
-			if baseISO != "" {
-				break
 			}
 		}
 	}
