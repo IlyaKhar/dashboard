@@ -150,10 +150,24 @@ export function HomePage() {
       ? lessonsData?.[currentPairIndex]
       : undefined;
 
-  // Показываем те же цифры, что и в строке текущей пары.
-  // Если данных по паре пока нет, fallback на агрегат по дню.
-  const presentCount = currentLessonReconcile?.totalPresent ?? reconcile?.totalPresent ?? 0;
-  const absentCount = currentLessonReconcile?.totalAbsent ?? reconcile?.totalAbsent ?? 0;
+  const hasCurrentLessonData = (currentLessonReconcile?.totalPlanned ?? 0) > 0;
+  const hasDayReconcileData = (reconcile?.totalPlanned ?? 0) > 0;
+
+  // Приоритет:
+  // 1) текущая пара (если есть planned),
+  // 2) агрегат по дню из reconcile (если есть planned),
+  // 3) fallback на summary/stats (когда по расписанию на дату нет пар -> иначе UI "0/0").
+  const presentCount = hasCurrentLessonData
+    ? currentLessonReconcile!.totalPresent
+    : hasDayReconcileData
+      ? reconcile!.totalPresent
+      : summary?.present ?? stats?.presentNow ?? 0;
+
+  const absentCount = hasCurrentLessonData
+    ? currentLessonReconcile!.totalAbsent
+    : hasDayReconcileData
+      ? reconcile!.totalAbsent
+      : summary?.absent ?? stats?.absentNow ?? 0;
 
   return (
     <div className="space-y-4">
